@@ -1,0 +1,10 @@
+remote_theme: tschneidereit/type-theme
+plugins:
+  - jekyll-include-cache
+
+theme_settings:
+  github: CraneStation/wasi
+  avatar: polyfill/WASI-small.png
+
+exclude:
+  - Gemfile
