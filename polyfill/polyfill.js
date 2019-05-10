@@ -53,6 +53,17 @@ function handleWASIExit(e) {
     }
 }
 
+// Safari doesn't have instantiateStreaming
+function wasi_instantiateStreaming(response, imports) {
+    if (WebAssembly && WebAssembly.instantiateStreaming) {
+        return WebAssembly.instantiateStreaming(response, imports);
+    }
+    return response.arrayBuffer()
+        .then(function(buffer) {
+            return WebAssembly.instantiate(buffer, imports);
+        });
+}
+
 // The current guest wasm instance.
 var currentInstance;
 
@@ -2180,7 +2191,7 @@ Module['asm'] = function(global, env, providedBuffer) {
 
 // === Body ===
 
-var ASM_CONSTS = [function() { const imports = { wasi_unstable: WASIPolyfill };         let file = document.getElementById('input').files[0];         let file_with_mime_type = file.slice(0, file.size, 'application/wasm');         let response = new Response(file_with_mime_type);         WebAssembly.instantiateStreaming(response, imports)         .then(obj => {             setInstance(obj.instance);             try {                 obj.instance.exports._start();             } catch (e) {                 if (e instanceof WASIExit) {                     handleWASIExit(e);                 } else {                 }             }         })         .catch(error => {             console.log('error! ' + error);         }); }];
+var ASM_CONSTS = [function() { const imports = { wasi_unstable: WASIPolyfill };         let file = document.getElementById('input').files[0];         let file_with_mime_type = file.slice(0, file.size, 'application/wasm');         let response = new Response(file_with_mime_type);         wasi_instantiateStreaming(response, imports)         .then(obj => {             setInstance(obj.instance);             try {                 obj.instance.exports._start();             } catch (e) {                 if (e instanceof WASIExit) {                     handleWASIExit(e);                 } else {                 }             }         })         .catch(error => {             console.log('error! ' + error);         }); }];
 
 function _emscripten_asm_const_i(code) {
   return ASM_CONSTS[code]();
