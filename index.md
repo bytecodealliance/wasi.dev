@@ -17,8 +17,8 @@ Here's a quick guide to the repositories where things live:
 WASI-enabled Rust - Rust Nightly builds now have built-in WASI support. To get started using Rust for targeting WASI:
 
 ```
-rustup target add wasm32-unknown-wasi --toolchain nightly
-cargo +nightly build --target wasm32-unknown-wasi
+rustup target add wasm32-wasi --toolchain nightly
+cargo +nightly build --target wasm32-wasi
 ```
 
 [wasmtime](https://github.com/CraneStation/wasmtime/) - Wasmtime WebAssembly runtime, with WASI support, as well as the WASI documentation.
