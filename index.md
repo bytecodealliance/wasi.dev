@@ -25,4 +25,6 @@ cargo +nightly build --target wasm32-wasi
 
 [Lucet](https://github.com/fastly/lucet/) - Fastly's WebAssembly runtime with WASI support.
 
+[Wasmer](https://github.com/wasmerio/wasmer/) - Wasmer WebAssembly runtime with WASI support.
+
 Everything here is a work in progress prototype, and not yet stable.
