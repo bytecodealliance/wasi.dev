@@ -10,8 +10,8 @@ WASI is a modular system interface for WebAssembly. As described in [the initial
 
 WASI is being standardized in [a subgroup of the WebAssembly CG](https://github.com/WebAssembly/WASI/blob/master/Charter.md). Discussions happen in [GitHub issues](https://github.com/WebAssembly/WASI/issues), [pull requests](https://github.com/WebAssembly/WASI/pulls), and [bi-weekly Zoom meetings](https://github.com/WebAssembly/WASI/tree/master/meetings).
 
-For a quick intro to WASI, including getting started using it, see [the intro document](https://github.com/CraneStation/wasmtime/blob/master/docs/WASI-intro.md).
+For a quick intro to WASI, including getting started using it, see [the intro document](https://github.com/bytecodealliance/wasmtime/blob/main/docs/WASI-intro.md).
 
-The Wasmtime runtime's [tutorial](https://github.com/CraneStation/wasmtime/blob/master/docs/WASI-tutorial.md) contains [examples](https://github.com/CraneStation/wasmtime/blob/master/docs/WASI-tutorial.md#running-common-languages-with-wasi) for how to target WASI from [C](https://github.com/CraneStation/wasmtime/blob/master/docs/WASI-tutorial.md#from-c) and [Rust](https://github.com/CraneStation/wasmtime/blob/master/docs/WASI-tutorial.md#from-rust). The resulting .wasm modules can be run in any WASI-compliant runtime.
+The Wasmtime runtime's [tutorial](https://github.com/bytecodealliance/wasmtime/blob/main/docs/WASI-tutorial.md) contains [examples](https://github.com/bytecodealliance/wasmtime/blob/main/docs/WASI-tutorial.md#running-common-languages-with-wasi) for how to target WASI from [C](https://github.com/bytecodealliance/wasmtime/blob/main/docs/WASI-tutorial.md#from-c) and [Rust](https://github.com/bytecodealliance/wasmtime/blob/main/docs/WASI-tutorial.md#from-rust). The resulting .wasm modules can be run in any WASI-compliant runtime.
 
-For more documentation, see [the documents guide](https://github.com/CraneStation/wasmtime/blob/master/docs/WASI-documents.md).
+For more documentation, see [the documents guide](https://github.com/bytecodealliance/wasmtime/blob/main/docs/WASI-documents.md).
