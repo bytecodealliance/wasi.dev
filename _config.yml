@@ -3,7 +3,7 @@ plugins:
   - jekyll-include-cache
 
 theme_settings:
-  github: CraneStation/wasi
+  github: bytecodealliance/wasi
   avatar: polyfill/WASI-small.png
 
 exclude:
