@@ -174,7 +174,7 @@
 
                 <div id="content" class="content">
                     <main>
-                        <p><img src="/images/wasi-head.png" alt="WASI logo" /></p>
+                        <p><img src="./images/wasi-head.png" alt="WASI logo" /></p>
 <p>The <strong>WebAssembly System Interface (WASI)</strong> is a group of standard API specifications for software compiled to the <strong><a href="https://www.w3.org/TR/wasm-core-2/">W3C WebAssembly (Wasm) standard</a></strong>. WASI is designed to provide a secure standard interface for applications that can be compiled to Wasm from any language, and that may run anywhere—from browsers to clouds to embedded devices.</p>
 <p>By standardizing APIs for WebAssembly, WASI provides a way to compose software written in different languages—without costly and clunky interface systems like HTTP-based microservices. We believe that every project with a plugin model should be using WASI, and that WASI is ideally suited for projects with SDKs for multiple languages, e.g. client libraries.</p>
 <p>To date, WASI has seen two milestone releases known as <strong>P1</strong> and <strong>P2</strong>. (Sometimes you will see these referred to as Preview 1 and Preview 2, or 0.1 and 0.2). The concepts and vocabulary of Wasm and WASI can sometimes be opaque to newcomers, so WASI.dev serves as an introduction to WASI for users of all backgrounds. It's very much a work-in-progress, and we welcome contributions on the <a href="https://github.com/bytecodealliance/wasi.dev">GitHub repo</a>.</p>
@@ -260,22 +260,6 @@
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script>
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 

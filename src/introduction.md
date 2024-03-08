@@ -1,4 +1,4 @@
-![WASI logo](/images/wasi-head.png)
+![WASI logo](./images/wasi-head.png)
   
 The **WebAssembly System Interface (WASI)** is a group of standard API specifications for software compiled to the **[W3C WebAssembly (Wasm) standard](https://www.w3.org/TR/wasm-core-2/)**. WASI is designed to provide a secure standard interface for applications that can be compiled to Wasm from any language, and that may run anywhere&mdash;from browsers to clouds to embedded devices.  
 
