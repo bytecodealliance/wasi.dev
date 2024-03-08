@@ -18,7 +18,7 @@ WASI and Wasm are tools for any type of software developer: whether you're writi
 
 ## How to get started
 
-There are many different runtimes that support WASI including [Wasmtime](), [WAMR](), [WasmEdge](), [wazero](), [wasmer](), [wasmi](), and [wasm3](). Many of these runtimes have different areas of focus (i.e., embedded devices, browser-based use-cases, or non-web embeddings), and the introductory documentation for each is a great place to start.
+There are many different runtimes that support WASI including [Wasmtime](https://wasmtime.dev/), [WAMR](https://bytecodealliance.github.io/wamr.dev/), [WasmEdge](https://wasmedge.org/), [wazero](https://wazero.io/), [Wasmer](https://wasmer.io/), [wasmi](https://github.com/wasmi-labs/wasmi), and [wasm3](https://github.com/wasm3/wasm3). Many of these runtimes have different areas of focus (i.e., IoT, embedded devices, and edge for WAMR, or server-side and non-web embeddings with components for Wasmtime). The introductory documentation for each is a great place to start.
 
 WASI can be implemented by both core Wasm modules and applications built according to the **Component Model**, a specification for Wasm applications that are interoperable and composable. You can learn more about components in the Bytecode Alliance's **[WebAssembly Component Model](https://component-model.bytecodealliance.org/)** documentation. 
 
