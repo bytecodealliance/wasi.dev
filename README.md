@@ -4,6 +4,6 @@ WASI.dev is an introduction to [WASI](https://github.com/WebAssembly/WASI/tree/m
 
 ### Local development
 
-This website is built using [Docusaurus](https://docusaurus.io/). After cloning this repository, you can build and start a development server with `npm install` and `npm start`. Most changes are reflected live without having to restart the server. Run `npm build` to produce the site content, and open a PR to the `gh-pages` branch of the `bytecodealliance/wasi.dev` repo to contribute.
+This website is built using [Docusaurus](https://docusaurus.io/). After forking and checking out the `dev` branch of this repository, you can build and start a development server with `npm install` and `npm start`. Most changes are reflected live without having to restart the server. Run `npm build` to produce the site content, and open a PR to the `gh-pages` branch of the `bytecodealliance/wasi.dev` repo to contribute.
 
 
