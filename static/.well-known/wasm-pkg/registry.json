@@ -1,0 +1,4 @@
+{
+        "ociRegistry": "ghcr.io",
+        "ociNamespacePrefix": "webassembly/"
+}
