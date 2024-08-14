@@ -1,0 +1,172 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "loadedVersions": [
+        {
+          "versionName": "current",
+          "label": "Next",
+          "banner": null,
+          "badge": false,
+          "noIndex": false,
+          "className": "docs-version-current",
+          "path": "/",
+          "tagsPath": "/tags",
+          "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs",
+          "editUrlLocalized": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/i18n/en/docusaurus-plugin-content-docs/current",
+          "isLast": true,
+          "routePriority": -1,
+          "sidebarFilePath": "/Users/egregory/BCA/wasi.dev/sidebars.js",
+          "contentPath": "/Users/egregory/BCA/wasi.dev/docs",
+          "contentPathLocalized": "/Users/egregory/BCA/wasi.dev/i18n/en/docusaurus-plugin-content-docs/current",
+          "docs": [
+            {
+              "id": "contribute",
+              "title": "Contribute",
+              "description": "This site is a community effort supported by volunteers through the Bytecode Alliance's Special Interest Group for Documentation.",
+              "source": "@site/docs/contribute.md",
+              "sourceDirName": ".",
+              "slug": "/contribute",
+              "permalink": "/contribute",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/contribute.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 4,
+              "frontMatter": {
+                "title": "Contribute",
+                "sidebar_position": 4
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Resources",
+                "permalink": "/resources"
+              }
+            },
+            {
+              "id": "interfaces",
+              "title": "Interfaces",
+              "description": "Modules and components",
+              "source": "@site/docs/interfaces.md",
+              "sourceDirName": ".",
+              "slug": "/interfaces",
+              "permalink": "/interfaces",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/interfaces.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "title": "Interfaces",
+                "sidebar_position": 2
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Introduction",
+                "permalink": "/"
+              },
+              "next": {
+                "title": "Resources",
+                "permalink": "/resources"
+              }
+            },
+            {
+              "id": "introduction",
+              "title": "Introduction",
+              "description": "The WebAssembly System Interface (WASI) is a group of standard API specifications for software compiled to the W3C WebAssembly (Wasm) standard. WASI is designed to provide a secure standard interface for applications that can be compiled to Wasm from any language, and that may run anywhere&mdash;from browsers to clouds to embedded devices.",
+              "source": "@site/docs/introduction.md",
+              "sourceDirName": ".",
+              "slug": "/",
+              "permalink": "/",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/introduction.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "title": "Introduction",
+                "slug": "/",
+                "sidebar_position": 1
+              },
+              "sidebar": "tutorialSidebar",
+              "next": {
+                "title": "Interfaces",
+                "permalink": "/interfaces"
+              }
+            },
+            {
+              "id": "resources",
+              "title": "Resources",
+              "description": "The following resources are helpful for those wishing to learn more about WASI and the WebAssembly ecosystem:",
+              "source": "@site/docs/resources.md",
+              "sourceDirName": ".",
+              "slug": "/resources",
+              "permalink": "/resources",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/resources.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 3,
+              "frontMatter": {
+                "title": "Resources",
+                "sidebar_position": 3
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Interfaces",
+                "permalink": "/interfaces"
+              },
+              "next": {
+                "title": "Contribute",
+                "permalink": "/contribute"
+              }
+            }
+          ],
+          "drafts": [],
+          "sidebars": {
+            "tutorialSidebar": [
+              {
+                "type": "doc",
+                "id": "introduction"
+              },
+              {
+                "type": "doc",
+                "id": "interfaces"
+              },
+              {
+                "type": "doc",
+                "id": "resources"
+              },
+              {
+                "type": "doc",
+                "id": "contribute"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "docusaurus-plugin-content-pages": {
+    "default": [
+      {
+        "type": "mdx",
+        "permalink": "/markdown-page",
+        "source": "@site/src/pages/markdown-page.md",
+        "title": "Markdown page example",
+        "description": "You don't need React to write simple standalone pages.",
+        "frontMatter": {
+          "title": "Markdown page example"
+        },
+        "unlisted": false
+      }
+    ]
+  },
+  "docusaurus-plugin-debug": {},
+  "docusaurus-theme-classic": {},
+  "docusaurus-bootstrap-plugin": {},
+  "docusaurus-mdx-fallback-plugin": {}
+}
