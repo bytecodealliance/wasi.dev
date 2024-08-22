@@ -1,34 +1,27 @@
-// @ts-check
-// `@type` JSDoc annotations allow editor autocompletion and type checking
-// (when paired with `@ts-check`).
-// There are various equivalent ways to declare your Docusaurus config.
-// See: https://docusaurus.io/docs/api/docusaurus-config
-
 import {themes as prismThemes} from 'prism-react-renderer';
 
-/** @type {import('@docusaurus/types').Config} */
-const config = {
+const config: import('@docusaurus/types').Config = {
+  // SEO & Metadata
   title: 'WASI.dev',
   favicon: 'img/favicon.ico',
+  titleDelimiter: '·',
+  tagline: 'WebAssembly System Interface',
 
-  // Set the production url of your site here
+  // URLs
   url: 'https://wasi.dev/',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
-
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'bytecodealliance', // Usually your GitHub org/user name.
-  projectName: 'wasi.dev', // Usually your repo name.
   trailingSlash: false,
 
+  // GitHub Configuration
+  organizationName: 'bytecodealliance',
+  projectName: 'wasi.dev',
+  deploymentBranch: 'main',
+
+  // Build Checks
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
+  // Internationalization
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
@@ -37,30 +30,24 @@ const config = {
   presets: [
     [
       'classic',
-      /** @type {import('@docusaurus/preset-classic').Options} */
-      ({
+      {
         docs: {
-          routeBasePath: '/', // Set this value to '/'.
-          
+          routeBasePath: '/',
           sidebarPath: './sidebars.js',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: 'https://github.com/bytecodealliance/wasi.dev/tree/main',
         },
         blog: false,
         theme: {
           customCss: './src/css/custom.css',
         },
-      }),
+      } satisfies import('@docusaurus/preset-classic').Options,
     ],
   ],
 
   themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    ({
-      // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+    {
+      // TODO: Add social image
+      // image: 'img/docusaurus-social-card.jpg',
       navbar: {
         title: 'WASI.dev',
         logo: {
@@ -111,7 +98,7 @@ const config = {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
       },
-    }),
+    } satisfies import('@docusaurus/preset-classic').ThemeConfig,
 };
 
 export default config;
