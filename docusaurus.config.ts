@@ -40,6 +40,9 @@ const config: import('@docusaurus/types').Config = {
         theme: {
           customCss: './src/css/custom.css',
         },
+        pages: {
+          path: './pages',
+        }
       } satisfies import('@docusaurus/preset-classic').Options,
     ],
   ],
