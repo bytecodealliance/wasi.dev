@@ -51,6 +51,9 @@ const config: import('@docusaurus/types').Config = {
     {
       // TODO: Add social image
       // image: 'img/docusaurus-social-card.jpg',
+      colorMode: {
+        respectPrefersColorScheme: true
+      },
       navbar: {
         title: 'WASI.dev',
         logo: {
