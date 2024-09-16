@@ -135,7 +135,7 @@ Some APIs may require backwards-incompatible changes over time. In these cases, 
 [wasi-logging]: https://github.com/WebAssembly/wasi-logging
 [wasi-messaging]: https://github.com/WebAssembly/wasi-messaging
 [wasi-nn]: https://github.com/WebAssembly/wasi-nn
-[wasi-observe]: https://github.com/dylibso/wasi-observe
+[wasi-observe]: https://github.com/WebAssembly/wasi-observe
 [wasi-parallel]: https://github.com/WebAssembly/wasi-parallel
 [wasi-pattern-match]: https://github.com/WebAssembly/wasi-pattern-match
 [wasi-proxy-wasm]: https://github.com/proxy-wasm/spec
