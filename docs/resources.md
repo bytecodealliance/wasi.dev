@@ -11,7 +11,7 @@ The following resources are helpful for those wishing to learn more about WASI a
 
 ## WASI 0.2 and the Component Model
 
-* **[WASI 0.2 GitHub repository](https://github.com/WebAssembly/WASI/blob/main/preview2/README.md)**
+* **[WASI 0.2 GitHub repository](https://github.com/WebAssembly/WASI/blob/main/wasip2/README.md)**
 * **[The Component Model GitHub repository](https://github.com/WebAssembly/component-model/tree/main)**
 * **[The WebAssembly Component Model documentation](https://component-model.bytecodealliance.org/)** 
 * **[The WIT format](https://github.com/WebAssembly/component-model/blob/main/design/mvp/WIT.md)**
