@@ -35,18 +35,18 @@ WASI P1 APIs were defined with WITX Interface Description Language (IDL), which 
 
 ## Proposals for the standard
 
-All WASI APIs are **proposals** for standardization by the WASI Subgroup. The API proposals in WASI 0.1 and 0.2 met implementation and portability criteria for inclusion at the time of those releases. A proposal advances through the following stages as defined in the [WebAssembly W3C process](https://github.com/WebAssembly/meetings/blob/main/process/phases.md):
+All WASI APIs are **proposals** for standardization by the WASI Subgroup. The API proposals in WASI 0.1 and 0.2 met implementation and portability criteria for inclusion at the time of those releases. A proposal advances through the following stages as defined in the [WASI Subgroup's Phase Process](https://github.com/WebAssembly/WASI/blob/main/Contributing.md#the-phase-process):
 
 * **Phase 0 - Pre-proposal**: The pre-proposal phase serves as a way to share ideas. At this phase, the WASI subgroup has not yet decided that the pre-proposal is in scope for WASI, and there may be overlap between pre-proposals.
 * **Phase 1 - Feature proposal**: In this phase, the proposal is added to the proposal list and a new fork of the spec repo is created.
-* **Phase 2 - Proposed spec text available**: During this phase, one or more implementations prototype the feature and a test suite is added.
+* **Phase 2 - Feature description available**: During this phase, one or more implementations prototype the feature and a test suite is added.
 * **Phase 3 - Implementation phase**: At this phase, project champions create releases following the conventions of semantic versioning (semver).
 * **Phase 4 - Standardize the feature:** At this point, the feature is fully handed off to the Working Group, where edge cases are considered and only minor changes occur. 
 * **Phase 5 - The feature is standardized**: Once the Working Group reaches consensus that the feature is complete, editors perform final editorial tweaks and merge the feature into the main branch of the primary spec repo.
 
 Proposals are first made to the **WASI Subgroup** of the [WebAssembly Community Group](https://www.w3.org/community/webassembly/). (See the [WASI Subgroup's meeting schedule](https://github.com/WebAssembly/meetings/tree/main/wasi).) 
 
-All active WASI API proposals can be found on the [WASI GitHub repository](https://github.com/WebAssembly/WASI/blob/main/Proposals.md), along with the [process for making a proposal](https://github.com/WebAssembly/WASI/blob/main/Contributing.md#the-phase-process).
+All active WASI API proposals can be found on the [WASI GitHub repository](https://github.com/WebAssembly/WASI/blob/main/Proposals.md). See the [Contributing to WASI page](https://github.com/WebAssembly/WASI/blob/main/Contributing.md) for information about submitting a new proposal.
 
 ## Active Proposals
 

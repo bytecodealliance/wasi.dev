@@ -3,8 +3,8 @@ title: "Introduction"
 slug: /
 sidebar_position: 1
 ---
-  
-The **WebAssembly System Interface (WASI)** is a group of standard API specifications for software compiled to the **[W3C WebAssembly (Wasm) standard](https://www.w3.org/TR/wasm-core-2/)**. WASI is designed to provide a secure standard interface for applications that can be compiled to Wasm from any language, and that may run anywhere&mdash;from browsers to clouds to embedded devices.  
+
+The **WebAssembly System Interface (WASI)** is a group of standards-track API specifications for software compiled to the **[W3C WebAssembly (Wasm) standard](https://www.w3.org/TR/wasm-core-2/)**. WASI is designed to provide a secure standard interface for applications that can be compiled to Wasm from any language, and that may run anywhere&mdash;from browsers to clouds to embedded devices.
 
 By standardizing APIs for WebAssembly, WASI provides a way to compose software written in different languages&mdash;without costly and clunky interface systems like HTTP-based microservices. We believe that every project with a plugin model should be using WASI, and that WASI is ideally suited for projects with SDKs for multiple languages, e.g. client libraries.
 
@@ -20,7 +20,7 @@ WASI and Wasm are tools for any type of software developer: whether you're writi
 
 ## How to get started
 
-There are many different runtimes that support WASI including [Wasmtime](https://wasmtime.dev/), [WAMR](https://bytecodealliance.github.io/wamr.dev/), [WasmEdge](https://wasmedge.org/), [wazero](https://wazero.io/), [Wasmer](https://wasmer.io/), [wasmi](https://github.com/wasmi-labs/wasmi), and [wasm3](https://github.com/wasm3/wasm3). Many of these runtimes have different areas of focus (i.e., IoT, embedded devices, and edge for WAMR, or server-side and non-web embeddings with components for Wasmtime). The introductory documentation for each is a great place to start.
+There are many different runtimes that support WASI including [Wasmtime](https://wasmtime.dev/), [WAMR](https://bytecodealliance.github.io/wamr.dev/), [WasmEdge](https://wasmedge.org/), [wazero](https://wazero.io/), [Wasmer](https://wasmer.io/), [wasmi](https://github.com/wasmi-labs/wasmi), [wasm3](https://github.com/wasm3/wasm3), and [jco](https://github.com/bytecodealliance/jco). Many of these runtimes have different areas of focus (i.e., IoT, embedded devices, and edge for WAMR, server-side and non-web embeddings with components for Wasmtime, and running in JS environments and browsers for Jco). The introductory documentation for each is a great place to start.
 
 WASI can be implemented by both core Wasm modules and applications built according to the **Component Model**, a specification for Wasm applications that are interoperable and composable. You can learn more about components in the Bytecode Alliance's **[WebAssembly Component Model](https://component-model.bytecodealliance.org/)** documentation. 
 
