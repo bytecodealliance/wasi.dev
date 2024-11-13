@@ -15,19 +15,30 @@ As you begin writing a Wasm application using WASI APIs, one of your first decis
 
 ## WASI 0.2
 
+### Presentation
+
 WASI 0.2 is the most recent WASI release. APIs designed for WASI 0.2 and the Component Model are defined with the [**WebAssembly Interface Type (WIT)**](https://github.com/WebAssembly/component-model/blob/main/design/mvp/WIT.md) Interface Description Language (IDL). WIT API definitions are made in `.wit` files which are composed into Wasm component binaries. The following interfaces are included in WASI P2:
 
-| API          | Repository                                     | Version |
-| ------------ | ---------------------------------------------- | ------- |
-| I/O          | https://github.com/WebAssembly/wasi-io         | 0.2.0   |
-| Clocks       | https://github.com/WebAssembly/wasi-clocks     | 0.2.0   |
-| Random       | https://github.com/WebAssembly/wasi-random     | 0.2.0   |
-| Filesystem   | https://github.com/WebAssembly/wasi-filesystem | 0.2.0   |
-| Sockets      | https://github.com/WebAssembly/wasi-sockets    | 0.2.0   |
-| CLI          | https://github.com/WebAssembly/wasi-cli        | 0.2.0   |
-| HTTP         | https://github.com/WebAssembly/wasi-http       | 0.2.0   |
+| API          | Repository                                     | 
+| ------------ | ---------------------------------------------- | 
+| Clocks       | https://github.com/WebAssembly/wasi-clocks     | 
+| Random       | https://github.com/WebAssembly/wasi-random     | 
+| Filesystem   | https://github.com/WebAssembly/wasi-filesystem | 
+| Sockets      | https://github.com/WebAssembly/wasi-sockets    | 
+| CLI          | https://github.com/WebAssembly/wasi-cli        | 
+| HTTP         | https://github.com/WebAssembly/wasi-http       | 
 
-You can explore the types and definitions for a given WASI 0.2 API in its WIT files. When you're ready to start using the API, you will typically generate bindings between the WIT definitions and the language you will be compiling to Wasm. For more information on WIT, see the [WIT section of the Component Model documentation](https://component-model.bytecodealliance.org/design/wit.html). 
+You can explore the types and definitions for a given WASI 0.2 API in its WIT files. When you're ready to start using the API, you will typically generate bindings between the WIT definitions and the language you will be compiling to Wasm. For more information on WIT, see the [WIT section of the Component Model documentation](https://component-model.bytecodealliance.org/design/wit.html).
+
+### Versions
+
+WASI 0.2 have a few subreleases, that are listed below.
+
+| Version                                                            | Changelog |
+| ------------------------------------------------------------------ | --------- |
+| [0.2.2](https://github.com/WebAssembly/WASI/releases/tag/v0.2.2)   | This release includes new WIT features for `@deprecated` feature gates and is excersied in the [wasi:http/proxy](https://github.com/WebAssembly/wasi-http/blob/main/wit/types.wit#L148-L158) world. For more information, see [component-model/WIT.md](https://github.com/WebAssembly/component-model/blob/main/design/mvp/WIT.md#feature-gates). |
+| [0.2.1](https://github.com/WebAssembly/WASI/releases/tag/v0.2.1)   | This release includes new WIT features for `@since` and `@unstable` feature gates. For more information, see [component-model/WIT.md](https://github.com/WebAssembly/component-model/blob/main/design/mvp/WIT.md#feature-gates). |
+| [0.2.0](https://github.com/WebAssembly/WASI/releases/tag/v0.2.0)   | This version officially launched with the vote in the WASI Subgroup January 24th. |
 
 ## WASI 0.1
 
