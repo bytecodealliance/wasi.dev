@@ -17,18 +17,15 @@ Previous releases:
 | 0.2.2        | 2024-10-03  |
 | 0.2.3        | 2024-12-05  |
 | 0.2.4        | 2025-02-06  |
-
-Future releases:
-
-| WASI version | Date        |
-|--------------|-------------|
 | 0.2.5        | 2025-04-03  |
 
 The release train for WASI 0.2 will end following the release of WASI 0.3.0.
 
 ## Upcoming WASI 0.3 releases
 
-WASI 0.3.0 is planning to release at the end of March 2025, adding **native async support** to the Component Model and refactoring WASI 0.2 interfaces to take advantage of native async. 
+At this time, WASI 0.3.0 previews are expected in August 2025 and completion is expected around November 2025. Please see the [presentation](https://github.com/WebAssembly/meetings/blob/main/wasi/2025/presentations/2025-05-01%20WASI%200.3.0%20Update%20May.pdf) and [notes](https://github.com/WebAssembly/meetings/blob/main/wasi/2025/WASI-05-01.md) from the May 2025 WASI SG meeting for more information. 
+
+WASI 0.3.0 will add **native async support** to the Component Model and refactor WASI 0.2 interfaces to take advantage of native async. 
 
 Native async will enable any component-level function to be implemented and/or called asynchronously, with asynchrony implemented at the level of the [Canonical ABI](https://component-model.bytecodealliance.org/advanced/canonical-abi.html). This includes explicit `stream<T>` and `future<T>` types for use anywhere in function parameters and results.
 
