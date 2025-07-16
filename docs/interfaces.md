@@ -13,6 +13,10 @@ As you begin writing a Wasm application using WASI APIs, one of your first decis
 
 * **Modules** can use APIs from WASI 0.1, an earlier stage of WASI's development. Since WASI 0.2 was released in February 2024, WASI 0.1 support is more widespread among Wasm runtimes, and it is widely used in production today. 
 
+## WASI 0.3
+
+For more information on the forthcoming WASI 0.3 release, see the [Roadmap](roadmap.md).
+
 ## WASI 0.2
 
 ### Presentation
@@ -36,11 +40,14 @@ WASI 0.2 includes several patch releases:
 
 | Version                                                            | Changelog |
 | ------------------------------------------------------------------ | --------- |
-| [0.2.2](https://github.com/WebAssembly/WASI/releases/tag/v0.2.2)   | This release includes new WIT features for `@deprecated` feature gates and is excersied in the [wasi:http/proxy](https://github.com/WebAssembly/wasi-http/blob/main/wit/types.wit#L148-L158) world. For more information, see [component-model/WIT.md](https://github.com/WebAssembly/component-model/blob/main/design/mvp/WIT.md#feature-gates). |
+| [0.2.5](https://github.com/WebAssembly/WASI/releases/tag/v0.2.5)   | This release includes minor documentation updates. |
+| [0.2.4](https://github.com/WebAssembly/WASI/releases/tag/v0.2.4)   | This release adds `wasi-tls` in Phase 1. |
+| [0.2.3](https://github.com/WebAssembly/WASI/releases/tag/v0.2.3)   | This release includes minor documentation updates. |
+| [0.2.2](https://github.com/WebAssembly/WASI/releases/tag/v0.2.2)   | This release includes new WIT features for `@deprecated` feature gates and is exercised in the [wasi:http/proxy](https://github.com/WebAssembly/wasi-http/blob/main/wit/types.wit#L148-L158) world. For more information, see [component-model/WIT.md](https://github.com/WebAssembly/component-model/blob/main/design/mvp/WIT.md#feature-gates). |
 | [0.2.1](https://github.com/WebAssembly/WASI/releases/tag/v0.2.1)   | This release includes new WIT features for `@since` and `@unstable` feature gates. For more information, see [component-model/WIT.md](https://github.com/WebAssembly/component-model/blob/main/design/mvp/WIT.md#feature-gates). |
 | [0.2.0](https://github.com/WebAssembly/WASI/releases/tag/v0.2.0)   | This version officially launched with the vote in the WASI Subgroup January 24th, 2024. |
 
-For more information on the release model for WASI 0.2, see the [Roadmap](roadmap.md).
+For more information on the release model for WASI, see the [Roadmap](roadmap.md).
 
 ## WASI 0.1
 

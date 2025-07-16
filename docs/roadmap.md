@@ -5,21 +5,9 @@ sidebar_position: 5
 
 This roadmap is a living document representing projected timelines for WASI releases. Goals and projections are provisional and subject to revision.
 
-## WASI 0.2 releases
+## WASI Releases
 
-WASI 0.2 point releases occur every two months, on the first Thursday of that month, on a **release train model**&mdash;a regular cadence in which releases are published regardless of the enhancements and fixes that are "ready for the train." Point releases include smaller features and big fixes, while major features and breaking changes are generally reserved for major versions.
-
-Previous releases:
-
-| WASI version | Date        |
-|--------------|-------------|
-| 0.2.1        | 2024-08-01  |
-| 0.2.2        | 2024-10-03  |
-| 0.2.3        | 2024-12-05  |
-| 0.2.4        | 2025-02-06  |
-| 0.2.5        | 2025-04-03  |
-
-The release train for WASI 0.2 will end following the release of WASI 0.3.0.
+WASI point releases occur every two months, on the first Thursday of that month, on a **release train model**&mdash;a regular cadence in which releases are published regardless of the enhancements and fixes that are "ready for the train." Point releases include smaller features and big fixes, while major features and breaking changes are generally reserved for major versions.
 
 ## Upcoming WASI 0.3 releases
 
