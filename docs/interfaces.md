@@ -98,6 +98,7 @@ All active WASI API proposals can be found on the [WASI GitHub repository](https
 | ----------------------------------------------------- | -------------------------------------------- | 
 | [Machine Learning (wasi-nn)][wasi-nn]                 | https://github.com/WebAssembly/wasi-nn       | 
 | [Clocks: Timezone][wasi-clocks]                       | https://github.com/WebAssembly/wasi-clocks   | 
+| [GFX][wasi-gfx]                                       | https://github.com/WebAssembly/wasi-gfx      | 
 
 ### Phase 1 - Feature Proposal (CG)
 
@@ -121,7 +122,6 @@ All active WASI API proposals can be found on the [WASI GitHub repository](https
 | [Threads][wasi-threads]                                                  | https://github.com/WebAssembly/wasi-native-threads |
 | [URL][wasi-url]                                                          | https://github.com/WebAssembly/wasi-url |  
 | [USB][wasi-usb]                                                          | https://github.com/WebAssembly/wasi-usb | 
-| [WebGPU][wasi-webgpu]                                                    | https://github.com/WebAssembly/wasi-webgpu |   
 
 ### Phase 0 - Pre-Proposal (CG)
 
@@ -168,5 +168,5 @@ Some APIs may require backwards-incompatible changes over time. In these cases, 
 [wasi-threads]: https://github.com/WebAssembly/wasi-native-threads
 [wasi-url]: https://github.com/WebAssembly/wasi-url
 [wasi-usb]: https://github.com/WebAssembly/wasi-usb
-[wasi-webgpu]: https://github.com/WebAssembly/wasi-webgpu
+[wasi-gfx]: https://github.com/WebAssembly/wasi-gfx
 [wasi-cli]: https://github.com/WebAssembly/wasi-cli
