@@ -66,7 +66,7 @@ All WASI APIs are **proposals** for standardization by the WASI Subgroup. The AP
 
 Proposals are first made to the **WASI Subgroup** of the [WebAssembly Community Group](https://www.w3.org/community/webassembly/). (See the [WASI Subgroup's meeting schedule](https://github.com/WebAssembly/meetings/tree/main/wasi).) 
 
-All active WASI API proposals can be found on the [WASI GitHub repository](https://github.com/WebAssembly/WASI/blob/main/Proposals.md). See the [Contributing to WASI page](https://github.com/WebAssembly/WASI/blob/main/Contributing.md) for information about submitting a new proposal.
+All active WASI API proposals can be found on the [WASI GitHub repository](https://github.com/WebAssembly/WASI/blob/main/docs/Proposals.md). See the [Contributing to WASI page](https://github.com/WebAssembly/WASI/blob/main/Contributing.md) for information about submitting a new proposal.
 
 ## Active Proposals
 
