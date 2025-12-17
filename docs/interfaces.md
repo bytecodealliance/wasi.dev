@@ -15,6 +15,17 @@ As you begin writing a Wasm application using WASI APIs, one of your first decis
 
 ## WASI 0.3
 
+WASI 0.3 is a forthcoming WASI release. Where WASI 0.2 represented a major departure from WASI 0.1, WASI 0.3 is a more iterative progression from WASI 0.2. The following draft interfaces are proposed for WASI 0.3:
+
+| API          | Repository                                                                         | 
+| ------------ | ---------------------------------------------------------------------------------- | 
+| Clocks       | https://github.com/WebAssembly/WASI/tree/main/proposals/clocks/wit-0.3.0-draft     | 
+| Random       | https://github.com/WebAssembly/WASI/tree/main/proposals/random/wit-0.3.0-draft     | 
+| Filesystem   | https://github.com/WebAssembly/WASI/tree/main/proposals/filesystem/wit-0.3.0-draft | 
+| Sockets      | https://github.com/WebAssembly/WASI/tree/main/proposals/sockets/wit-0.3.0-draft    | 
+| CLI          | https://github.com/WebAssembly/WASI/tree/main/proposals/cli/wit-0.3.0-draft        | 
+| HTTP         | https://github.com/WebAssembly/WASI/tree/main/proposals/http/wit-0.3.0-draft       | 
+
 For more information on the forthcoming WASI 0.3 release, see the [Roadmap](roadmap.md).
 
 ## WASI 0.2
@@ -23,14 +34,14 @@ For more information on the forthcoming WASI 0.3 release, see the [Roadmap](road
 
 WASI 0.2 is the most recent WASI release. APIs designed for WASI 0.2 and the Component Model are defined with the [**WebAssembly Interface Type (WIT)**](https://github.com/WebAssembly/component-model/blob/main/design/mvp/WIT.md) Interface Description Language (IDL). WIT API definitions are made in `.wit` files which are composed into Wasm component binaries. The following interfaces are included in WASI P2:
 
-| API          | Repository                                     | 
-| ------------ | ---------------------------------------------- | 
-| Clocks       | https://github.com/WebAssembly/wasi-clocks     | 
-| Random       | https://github.com/WebAssembly/wasi-random     | 
-| Filesystem   | https://github.com/WebAssembly/wasi-filesystem | 
-| Sockets      | https://github.com/WebAssembly/wasi-sockets    | 
-| CLI          | https://github.com/WebAssembly/wasi-cli        | 
-| HTTP         | https://github.com/WebAssembly/wasi-http       | 
+| API          | Repository                                                         | 
+| ------------ | ------------------------------------------------------------------ | 
+| Clocks       | https://github.com/WebAssembly/WASI/tree/main/proposals/clocks     | 
+| Random       | https://github.com/WebAssembly/WASI/tree/main/proposals/random     | 
+| Filesystem   | https://github.com/WebAssembly/WASI/tree/main/proposals/filesystem | 
+| Sockets      | https://github.com/WebAssembly/WASI/tree/main/proposals/sockets    | 
+| CLI          | https://github.com/WebAssembly/WASI/tree/main/proposals/cli        | 
+| HTTP         | https://github.com/WebAssembly/WASI/tree/main/proposals/http       | 
 
 You can explore the types and definitions for a given WASI 0.2 API in its WIT files. When you're ready to start using the API, you will typically generate bindings between the WIT definitions and the language you will be compiling to Wasm. For more information on WIT, see the [WIT section of the Component Model documentation](https://component-model.bytecodealliance.org/design/wit.html).
 
@@ -40,6 +51,10 @@ WASI 0.2 includes several patch releases:
 
 | Version                                                            | Changelog |
 | ------------------------------------------------------------------ | --------- |
+| [0.2.9](https://github.com/WebAssembly/WASI/releases/tag/v0.2.9)   | This release includes a variety of organizational and documentation updates. |
+| [0.2.8](https://github.com/WebAssembly/WASI/releases/tag/v0.2.8)   | This is a regular release with no major changes. |
+| [0.2.7](https://github.com/WebAssembly/WASI/releases/tag/v0.2.7)   | This release adds a caveat about support for sync flags. |
+| [0.2.6](https://github.com/WebAssembly/WASI/releases/tag/v0.2.6)   | This release adds wasi-otel as a phase 0 proposal as well as a release workflow. |
 | [0.2.5](https://github.com/WebAssembly/WASI/releases/tag/v0.2.5)   | This release includes minor documentation updates. |
 | [0.2.4](https://github.com/WebAssembly/WASI/releases/tag/v0.2.4)   | This release adds `wasi-tls` in Phase 1. |
 | [0.2.3](https://github.com/WebAssembly/WASI/releases/tag/v0.2.3)   | This release includes minor documentation updates. |
@@ -68,7 +83,7 @@ Proposals are first made to the **WASI Subgroup** of the [WebAssembly Community 
 
 All active WASI API proposals can be found on the [WASI GitHub repository](https://github.com/WebAssembly/WASI/blob/main/docs/Proposals.md). See the [Contributing to WASI page](https://github.com/WebAssembly/WASI/blob/main/Contributing.md) for information about submitting a new proposal.
 
-## Active Proposals
+## Active proposals
 
 ### Phase 5 - The Feature is Standardized (WG)
 
