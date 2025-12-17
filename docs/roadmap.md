@@ -11,7 +11,7 @@ WASI point releases occur every two months, on the first Thursday of that month,
 
 ## Upcoming WASI 0.3 releases
 
-At this time, WASI 0.3.0 previews are expected in August 2025 and completion is expected around November 2025. Please see the [presentation](https://github.com/WebAssembly/meetings/blob/main/wasi/2025/presentations/2025-05-01%20WASI%200.3.0%20Update%20May.pdf) and [notes](https://github.com/WebAssembly/meetings/blob/main/wasi/2025/WASI-05-01.md) from the May 2025 WASI SG meeting for more information. 
+At this time, WASI 0.3.0 previews are [available in Wasmtime 37+](https://github.com/bytecodealliance/wasmtime) and completion is expected around February 2026. Please see the [notes](https://github.com/WebAssembly/meetings/blob/main/wasi/2025/WASI-10-02.md) from the October 2025 WASI SG meeting for more information. 
 
 WASI 0.3.0 will add **native async support** to the Component Model and refactor WASI 0.2 interfaces to take advantage of native async. 
 
@@ -33,4 +33,4 @@ You can find more information in the [WebAssembly CG presentation from February 
 
 The provisional timeline for WASI releases is as follows:
 
-![The WASI timeline projects a P3 release in the first half of 2025 and a 1.0 release candidate in 2026](../static/img/wasi-timeline.webp)
+![The WASI timeline projects a P3 release in early 2026](../static/img/wasi-timeline.webp)
