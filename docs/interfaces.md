@@ -66,7 +66,7 @@ For more information on the release model for WASI, see the [Roadmap](roadmap.md
 
 ## WASI 0.1
 
-WASI P1 APIs were defined with WITX Interface Description Language (IDL), which was an iterative step toward WIT but bears notable differences, including that it was developed as a lower-level derivation of WebAssembly Text Format (a human-readable source format for Wasm modules). Documentation for WASI 0.1 and WITX can be found in the [`legacy` directory of the WASI GitHub repository](https://github.com/WebAssembly/WASI/blob/main/legacy/README.md), along with a [complete list of 0.1 types and modules](https://github.com/WebAssembly/WASI/blob/main/legacy/preview1/docs.md).
+WASI P1 APIs were defined with WITX Interface Description Language (IDL), which was an iterative step toward WIT but bears notable differences, including that it was developed as a lower-level derivation of WebAssembly Text Format (a human-readable source format for Wasm modules). Documentation for WASI 0.1 and WITX can be found on the [`wasi-0.1` branch of the WASI GitHub repository](https://github.com/WebAssembly/WASI/tree/wasi-0.1), along with a [complete list of 0.1 types and modules](https://github.com/WebAssembly/WASI/blob/wasi-0.1/preview1/docs.md).
 
 ## Proposals for the standard
 
