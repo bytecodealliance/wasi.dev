@@ -18,8 +18,8 @@ The following resources are helpful for those wishing to learn more about WASI a
 
 ## WASI 0.1
 
-* **[WASI 0.1 legacy documentation](https://github.com/WebAssembly/WASI/blob/main/legacy/README.md)**
-* **[WASI 0.1 types and modules](https://github.com/WebAssembly/WASI/blob/main/legacy/preview1/docs.md)**
+* **[WASI 0.1 legacy documentation](https://github.com/WebAssembly/WASI/tree/wasi-0.1)**
+* **[WASI 0.1 types and modules](https://github.com/WebAssembly/WASI/blob/wasi-0.1/preview1/docs.md)**
 
 ## WebAssembly
 
