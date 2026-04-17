@@ -1,6 +1,6 @@
 ---
 title: "Contribute"
-sidebar_position: 4
+sidebar_position: 5
 ---
   
 This site is a community effort supported by volunteers through the Bytecode Alliance's Special Interest Group for Documentation. 

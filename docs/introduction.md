@@ -4,11 +4,11 @@ slug: /
 sidebar_position: 1
 ---
 
-The **WebAssembly System Interface (WASI)** is a group of standards-track API specifications for software compiled to the **[W3C WebAssembly (Wasm) standard](https://www.w3.org/TR/wasm-core-2/)**. WASI is designed to provide a secure standard interface for applications that can be compiled to Wasm from any language, and that may run anywhere&mdash;from browsers to clouds to embedded devices.
+The **WebAssembly System Interface (WASI)** is a group of standards-track API specifications for software compiled to the **[W3C WebAssembly (Wasm) standard](https://www.w3.org/TR/wasm-core-2/)**. WASI is designed to provide a secure standard interface for applications that can be compiled to Wasm from any language, and that may run anywhere, from browsers to clouds to embedded devices.
 
-By standardizing APIs for WebAssembly, WASI provides a way to compose software written in different languages&mdash;without costly and clunky interface systems like HTTP-based microservices. We believe that every project with a plugin model should be using WASI, and that WASI is ideally suited for projects with SDKs for multiple languages, e.g. client libraries.
+By standardizing APIs for WebAssembly, WASI provides a way to compose software written in different languages without costly and clunky interface systems like HTTP-based microservices. We believe that every project with a plugin model should be using WASI, and that WASI is ideally suited for projects with SDKs for multiple languages, e.g. client libraries.
 
-To date, WASI has seen two milestone releases known as **0.1** and **0.2**. (Sometimes you will see these referred to as Preview 1 and Preview 2, or P1 and P2). The concepts and vocabulary of Wasm and WASI can sometimes be opaque to newcomers, so WASI.dev serves as an introduction to WASI for users of all backgrounds. It's very much a work-in-progress, and we welcome contributions on the [GitHub repo](https://github.com/bytecodealliance/wasi.dev). 
+To date, WASI has seen two milestone releases known as **0.1** and **0.2**, with a third (**0.3**) currently in release candidate stage. (Sometimes you will see these referred to as Preview 1/2/3 or P1/P2/P3.) WASI 0.3 adds native async support to the Component Model and refactors WASI interfaces to take advantage of async primitives like `stream<T>` and `future<T>`. For more details, see [WASI 0.3](releases/wasi-p3.md). The concepts and vocabulary of Wasm and WASI can sometimes be opaque to newcomers, so WASI.dev serves as an introduction to WASI for users of all backgrounds. We welcome contributions on the [GitHub repo](https://github.com/bytecodealliance/wasi.dev). 
 
 ## Who are we?
 
@@ -24,6 +24,6 @@ There are many different runtimes that support WASI including [Wasmtime](https:/
 
 WASI can be implemented by both core Wasm modules and applications built according to the **Component Model**, a specification for Wasm applications that are interoperable and composable. You can learn more about components in the Bytecode Alliance's **[WebAssembly Component Model](https://component-model.bytecodealliance.org/)** documentation. 
 
-[Continue reading](./interfaces.md) to learn more about WASI interfaces, including available APIs and how they are defined. 
+[Continue reading](./releases/) to learn more about WASI releases, including available APIs and how they are defined. 
 
 
