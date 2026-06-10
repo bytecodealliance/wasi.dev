@@ -194,7 +194,7 @@ WASI P3 support is available in:
 
 Wasmtime v44 added initial `wasi:tls@0.3.0-draft` support. From v44 onward, `wasmtime serve` can serve P3 components when invoked with `-Sp3 -W component-model-async=y`, automatically falling back to the WASI P2 `wasi:http/proxy` world for components that don't export the P3 `service` world.
 
-Runtimes verify WASI P3 conformance against the shared [`wasi-testsuite`](https://github.com/WebAssembly/wasi-testsuite), which is being extended with WASI P3 coverage; preview1 tests are complete and preview3 tests are landing.
+Runtimes verify WASI P3 conformance against the shared [`wasi-testsuite`](https://github.com/WebAssembly/wasi-testsuite). P3 coverage is now running on Wasmtime and jco across Linux, macOS, and Windows, with new tests landing weekly.
 
 ## Migrating from WASI P2
 
