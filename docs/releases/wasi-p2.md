@@ -1,29 +1,29 @@
 ---
-title: "WASI 0.2"
+title: "WASI P2"
 sidebar_position: 2
 ---
 
-WASI 0.2 is the most recent stable WASI release. It marked the full rebase of WASI onto the [Component Model](https://component-model.bytecodealliance.org/) and the [WebAssembly Interface Type (WIT)](https://github.com/WebAssembly/component-model/blob/main/design/mvp/WIT.md) Interface Description Language, replacing the C-like WITX IDL used in WASI 0.1.
+WASI P2 is the most recent stable WASI release. It marked the full rebase of WASI onto the [Component Model](https://component-model.bytecodealliance.org/) and the [WebAssembly Interface Type (WIT)](https://github.com/WebAssembly/component-model/blob/main/design/mvp/WIT.md) Interface Description Language, replacing the C-like WITX IDL used in WASI P1.
 
 ## Overview
 
-The WASI 0.2 release is characterized by the following key features:
+The WASI P2 release is characterized by the following key features:
 
-* **Component Model foundation.** WASI 0.2 APIs are defined in WIT and consumed as WebAssembly components. This enables modularity, virtualizability (polyfilling one implementation with another), and cross-language interoperability. A component compiled from Rust can communicate or be combined with a component compiled from Go, JavaScript, Python, or any other language with component tooling.
+* **Component Model foundation.** WASI P2 APIs are defined in WIT and consumed as WebAssembly components. This enables modularity, virtualizability (polyfilling one implementation with another), and cross-language interoperability. A component compiled from Rust can communicate or be combined with a component compiled from Go, JavaScript, Python, or any other language with component tooling.
 
-* **Worlds.** WASI 0.2 defines two standard worlds:
+* **Worlds.** WASI P2 defines two standard worlds:
      - `wasi:cli/command` targets command-line programs that export a `run` function, with access to filesystem, environment variables, stdin/stdout/stderr, and other CLI capabilities.
      - `wasi:http/proxy` targets HTTP proxies that export an `incoming-handler`, with support for concurrent streaming of multiple HTTP requests.
 
-* **The `wasi:io` package.** Asynchronous I/O in WASI 0.2 is modeled through the `wasi:io` package, which provides:
+* **The `wasi:io` package.** Asynchronous I/O in WASI P2 is modeled through the `wasi:io` package, which provides:
      - A `pollable` resource for non-blocking I/O polling across multiple handles
      - `input-stream` and `output-stream` abstractions for reading and writing byte data
      - A `poll` function for waiting on multiple pollables simultaneously
-  The `wasi:io` package underpins all other WASI 0.2 interfaces that perform I/O. In [WASI 0.3](wasi-p3.md), `wasi:io` is removed and replaced by the Component Model's native `stream<T>`, `future<T>`, and `async func` primitives.
+  The `wasi:io` package underpins all other WASI P2 interfaces that perform I/O. In [WASI 0.3](wasi-p3.md), `wasi:io` is removed and replaced by the Component Model's native `stream<T>`, `future<T>`, and `async func` primitives.
 
 ## Interfaces
 
-APIs designed for WASI 0.2 are defined in `.wit` files. The following interfaces are included:
+APIs designed for WASI P2 are defined in `.wit` files. The following interfaces are included:
 
 | API          | WIT definitions                                                    | Description |
 | ------------ | ------------------------------------------------------------------ | ----------- |
@@ -35,15 +35,15 @@ APIs designed for WASI 0.2 are defined in `.wit` files. The following interfaces
 | CLI          | [wit](https://github.com/WebAssembly/WASI/tree/main/proposals/cli/wit) | Environment variables, arguments, stdin/stdout/stderr, process exit |
 | HTTP         | [wit](https://github.com/WebAssembly/WASI/tree/main/proposals/http/wit) | HTTP request/response handling for clients and servers |
 
-You can explore the types and definitions for a given WASI 0.2 API in its WIT files. When you're ready to start using the API, you will typically generate bindings between the WIT definitions and the language you will be compiling to Wasm. For more information on WIT, see the [WIT section of the Component Model documentation](https://component-model.bytecodealliance.org/design/wit.html).
+You can explore the types and definitions for a given WASI P2 API in its WIT files. When you're ready to start using the API, you will typically generate bindings between the WIT definitions and the language you will be compiling to Wasm. For more information on WIT, see the [WIT section of the Component Model documentation](https://component-model.bytecodealliance.org/design/wit.html).
 
 ## Runtime support
 
-WASI 0.2 portability criteria were met by [Wasmtime](https://wasmtime.dev/) and [jco](https://github.com/bytecodealliance/jco), both of which pass the shared WASI Preview 2 test suite. Other runtimes including [WAMR](https://bytecodealliance.github.io/wamr.dev/) and [WasmEdge](https://wasmedge.org/) have varying levels of WASI 0.2 support.
+WASI P2 portability criteria were met by [Wasmtime](https://wasmtime.dev/) and [jco](https://github.com/bytecodealliance/jco), both of which passed the WASI P2 test suite at the time of certification. Other runtimes including [WAMR](https://bytecodealliance.github.io/wamr.dev/) and [WasmEdge](https://wasmedge.org/) have varying levels of WASI P2 support.
 
 ## Patch releases
 
-WASI 0.2 includes several patch releases:
+WASI P2 includes several patch releases:
 
 | Version                                                            | Changelog |
 | ------------------------------------------------------------------ | --------- |
@@ -60,6 +60,6 @@ WASI 0.2 includes several patch releases:
 
 ## Further reading
 
-- [WASI 0.2 GitHub repository](https://github.com/WebAssembly/WASI/blob/main/wasip2/README.md)
+- [WASI P2 GitHub repository](https://github.com/WebAssembly/WASI/blob/main/wasip2/README.md)
 - [Component Model documentation](https://component-model.bytecodealliance.org/)
 - [Roadmap](../roadmap.md)
