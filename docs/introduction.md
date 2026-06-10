@@ -8,7 +8,7 @@ The **WebAssembly System Interface (WASI)** is a group of standards-track API sp
 
 By standardizing APIs for WebAssembly, WASI provides a way to compose software written in different languages without costly and clunky interface systems like HTTP-based microservices. We believe that every project with a plugin model should be using WASI, and that WASI is ideally suited for projects with SDKs for multiple languages, e.g. client libraries.
 
-To date, WASI has seen two milestone releases known as **0.1** and **0.2**, with a third (**0.3**) currently in release candidate stage. (Sometimes you will see these referred to as Preview 1/2/3 or P1/P2/P3.) WASI 0.3 adds native async support to the Component Model and refactors WASI interfaces to take advantage of async primitives like `stream<T>` and `future<T>`. For more details, see [WASI 0.3](releases/wasi-p3.md). The concepts and vocabulary of Wasm and WASI can sometimes be opaque to newcomers, so WASI.dev serves as an introduction to WASI for users of all backgrounds. We welcome contributions on the [GitHub repo](https://github.com/bytecodealliance/wasi.dev). 
+To date, WASI has seen two milestone releases known as **P1** and **P2**, with a third (**P3**) currently in release candidate stage. (Sometimes you will see these referred to as Preview 1/2/3 or 0.1/0.2/0.3.) WASI P3 adds native async support to the Component Model and refactors WASI interfaces to take advantage of async primitives like `stream<T>` and `future<T>`. For more details, see [WASI P3](releases/wasi-p3.md). 
 
 ## Who are we?
 
@@ -16,13 +16,17 @@ WASI is an open standard under active development by the [**WASI Subgroup**](htt
 
 ## Who are you?
 
-WASI and Wasm are tools for any type of software developer: whether you're writing web apps, plugins, serverless functions, User-Defined Functions (UDFs) in a database, embedded controller components, sidecar networking filters, or something completely different. This site is intended to make WASI understandable regardless of your background, use-case, or familiarity with the WebAssembly ecosystem.
+WASI and Wasm are tools for any type of software developer: whether you're writing web apps, plugins, serverless functions, User-Defined Functions (UDFs) in a database, embedded controller components, sidecar networking filters, or something completely different. This site is intended to introduce the concepts and vocabulary of WASI regardless of your background, use-case, or familiarity with the WebAssembly ecosystem.
 
 ## How to get started
 
 There are many different runtimes that support WASI including [Wasmtime](https://wasmtime.dev/), [WAMR](https://bytecodealliance.github.io/wamr.dev/), [WasmEdge](https://wasmedge.org/), [wazero](https://wazero.io/), [Wasmer](https://wasmer.io/), [wasmi](https://github.com/wasmi-labs/wasmi), [wasm3](https://github.com/wasm3/wasm3), [jco](https://github.com/bytecodealliance/jco) and [pywasm](https://github.com/mohanson/pywasm). Many of these runtimes have different areas of focus (i.e., IoT, embedded devices, and edge for WAMR, server-side and non-web embeddings with components for Wasmtime, and running in JS environments and browsers for Jco). The introductory documentation for each is a great place to start.
 
-WASI can be implemented by both core Wasm modules and applications built according to the **Component Model**, a specification for Wasm applications that are interoperable and composable. You can learn more about components in the Bytecode Alliance's **[WebAssembly Component Model](https://component-model.bytecodealliance.org/)** documentation. 
+WASI can be implemented by both core Wasm modules and applications built according to the **Component Model**, a specification for Wasm applications that are interoperable and composable. You can learn more about components in the Bytecode Alliance's **[WebAssembly Component Model](https://component-model.bytecodealliance.org/)** documentation.
+
+WASI applications run in a **capability-based** sandbox: a Wasm module or component starts with no ambient authority and can only do what the host explicitly grants. See the [Security](./security.md) page for more.
+
+When you're ready to start building, the [Component Model documentation](https://component-model.bytecodealliance.org/) walks through compiling a first component and running it on Wasmtime or jco, with tutorials for Rust, JavaScript, Python, Go, C, C#, and MoonBit.
 
 [Continue reading](./releases/) to learn more about WASI releases, including available APIs and how they are defined. 
 

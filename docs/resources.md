@@ -1,6 +1,6 @@
 ---
 title: "Resources"
-sidebar_position: 4
+sidebar_position: 5
 ---
   
 The following resources are helpful for those wishing to learn more about WASI and the WebAssembly ecosystem:
@@ -8,14 +8,15 @@ The following resources are helpful for those wishing to learn more about WASI a
 ## WASI
 
 * **[The WASI GitHub repository](https://github.com/WebAssembly/WASI)**
+* **[`wasi-testsuite`](https://github.com/WebAssembly/wasi-testsuite)**: shared test suite and runner for WASI runtimes, with adapters for the major implementations and tests covering WASI P1 and WASI P3.
 
-## WASI 0.3
+## WASI P3
 
-* **[WASI 0.3 draft interfaces](https://github.com/WebAssembly/WASI/tree/main/proposals)** (see `wit-0.3.0-draft` directories within each proposal)
+* **[WASI P3 draft interfaces](https://github.com/WebAssembly/WASI/tree/main/proposals)** (see `wit-0.3.0-draft` directories within each proposal)
 
-## WASI 0.2
+## WASI P2
 
-* **[WASI 0.2 GitHub repository](https://github.com/WebAssembly/WASI/blob/main/wasip2/README.md)**
+* **[WASI P2 GitHub repository](https://github.com/WebAssembly/WASI/blob/main/wasip2/README.md)**
 
 ## The Component Model
 
@@ -23,10 +24,10 @@ The following resources are helpful for those wishing to learn more about WASI a
 * **[The Component Model GitHub repository](https://github.com/WebAssembly/component-model/tree/main)**
 * **[The WIT format](https://github.com/WebAssembly/component-model/blob/main/design/mvp/WIT.md)**
 
-## WASI 0.1
+## WASI P1
 
-* **[WASI 0.1 legacy documentation](https://github.com/WebAssembly/WASI/tree/wasi-0.1)**
-* **[WASI 0.1 types and modules](https://github.com/WebAssembly/WASI/blob/wasi-0.1/preview1/docs.md)**
+* **[WASI P1 legacy documentation](https://github.com/WebAssembly/WASI/tree/wasi-0.1)**
+* **[WASI P1 types and modules](https://github.com/WebAssembly/WASI/blob/wasi-0.1/preview1/docs.md)**
 
 ## WebAssembly
 
