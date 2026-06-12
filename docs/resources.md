@@ -12,7 +12,7 @@ The following resources are helpful for those wishing to learn more about WASI a
 
 ## WASI P3
 
-* **[WASI P3 draft interfaces](https://github.com/WebAssembly/WASI/tree/main/proposals)** (see `wit-0.3.0-draft` directories within each proposal)
+* **[WASI P3 interfaces](https://github.com/WebAssembly/WASI/tree/main/proposals)** (see `wit/` directories within each proposal)
 
 ## WASI P2
 

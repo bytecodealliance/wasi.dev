@@ -8,7 +8,7 @@ The **WebAssembly System Interface (WASI)** is a group of standards-track API sp
 
 By standardizing APIs for WebAssembly, WASI provides a way to compose software written in different languages without costly and clunky interface systems like HTTP-based microservices. We believe that every project with a plugin model should be using WASI, and that WASI is ideally suited for projects with SDKs for multiple languages, e.g. client libraries.
 
-To date, WASI has seen two milestone releases known as **P1** and **P2**, with a third (**P3**) currently in release candidate stage. (Sometimes you will see these referred to as Preview 1/2/3 or 0.1/0.2/0.3.) WASI P3 adds native async support to the Component Model and refactors WASI interfaces to take advantage of async primitives like `stream<T>` and `future<T>`. For more details, see [WASI P3](releases/wasi-p3.md). 
+To date, WASI has seen three milestone releases known as **P1**, **P2**, and **P3**. (Sometimes you will see these referred to as Preview 1/2/3 or 0.1/0.2/0.3.) WASI P3 adds native async support to the Component Model and refactors WASI interfaces to take advantage of async primitives like `stream<T>` and `future<T>`. For more details, see [WASI P3](releases/wasi-p3.md). 
 
 ## Who are we?
 
