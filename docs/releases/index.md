@@ -17,7 +17,7 @@ As you begin writing a Wasm application using WASI APIs, one of your first decis
 
 | Release | Status | Description |
 | ------- | ------ | ----------- |
-| [WASI P3](wasi-p3.md) | Release candidate | Native async support with `async func`, `stream<T>`, and `future<T>`; refactored WASI P2 interfaces |
+| [WASI P3](wasi-p3.md) | Stable | Native async support with `async func`, `stream<T>`, and `future<T>`; refactored WASI P2 interfaces |
 | [WASI P2](wasi-p2.md) | Stable | Component Model foundation with WIT interfaces, composability, and cross-language interoperability |
 | [WASI P1](wasi-p1.md) | Legacy | POSIX-inspired module API with broad runtime support |
 
