@@ -11,7 +11,7 @@ WASI point releases occur every two months, on the first Thursday of that month,
 
 ## WASI P3
 
-WASI 0.3.0 is currently in **release candidate** stage (`0.3.0-rc-2026-03-15`). WASI P3 support is available in [Wasmtime 43+](https://github.com/bytecodealliance/wasmtime) and [jco](https://github.com/bytecodealliance/jco).
+WASI 0.3.0 was released on June 11, 2026. WASI P3 support is available in [Wasmtime 43+](https://github.com/bytecodealliance/wasmtime) and [jco](https://github.com/bytecodealliance/jco).
 
 WASI P3 adds **native async support** to the Component Model and refactors WASI P2 interfaces to take advantage of native async primitives: `async func`, `stream<T>`, and `future<T>`. The `wasi:io` package is removed entirely, with its functionality absorbed into the Component Model's Canonical ABI. For a full overview of changes, see [WASI P3](releases/wasi-p3.md).
 
