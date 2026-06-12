@@ -28,7 +28,7 @@ The languages below can be compiled to WebAssembly with WASI support. Some toolc
 - **Modules vs components.** A Wasm **module** is a single binary in the core WebAssembly format and can use WASI 0.1. A **component** is built to the Component Model and can use WASI 0.2 or 0.3, gaining composability, cross-language interoperability, and richer interface types. See the [Releases](releases/index.md) and [Roadmap](roadmap.md) pages for more on the WASI releases.
 - **Adapting modules to components.** Several toolchains produce core modules today and wrap them into components using [`wasm-tools component new`](https://github.com/bytecodealliance/wasm-tools) with a P1-to-P2 adapter. This is the path for C/C++ and MoonBit.
 - **WASI 0.3 ecosystem state.** Broad language-level P3 support is still landing. The Rust `wasm32-wasip3` target is Tier 3 (nightly only). `jco` ships a `preview3-shim` package with streams support landed and futures support following. Other toolchains have not yet shipped P3 support.
-- **Version pinning.** When working with WASI 0.3, all WIT-aware tools must target the same version (currently `0.3.0`). Mismatches surface as confusing `wrong type` errors at instantiation.
+- **Version pinning.** The Component Model defines [canonical interface names](https://github.com/WebAssembly/component-model/blob/main/design/mvp/Explainer.md#-canonical-interface-name) so that components can link across compatible versions, but not all tools support this version-aware linking yet. Until they do, target the same version (`0.3.0`) across all WIT-aware tools. Mismatches surface as confusing `wrong type` errors at instantiation.
 
 ### Building guides
 
