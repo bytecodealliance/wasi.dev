@@ -3,7 +3,7 @@ title: "WASI P1"
 sidebar_position: 3
 ---
 
-WASI P1 (also known as Preview 1, 0.1, or `wasi_snapshot_preview1`) is the original stable WASI release. It provides a POSIX-inspired system interface for core WebAssembly modules and has the broadest runtime support of any WASI version. While WASI P2 and P3 represent the future of the standard, WASI P1 remains widely used in production.
+WASI P1 (also known as Preview 1, 0.1, or `wasi_snapshot_preview1`) is the original stable WASI release. It provides a POSIX-inspired system interface for core WebAssembly modules and has the broadest runtime support of any WASI version. While WASI 0.2 and now WASI 0.3 represent the future of the standard, WASI P1 remains widely used in production.
 
 ## Overview
 

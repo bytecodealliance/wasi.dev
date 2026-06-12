@@ -5,19 +5,19 @@ sidebar_position: 2
 
 ## Modules and components
 
-WebAssembly binaries may be **components** built according to the [Component Model](https://component-model.bytecodealliance.org/) or **modules** built to the core WebAssembly specification. 
+WebAssembly binaries may be **components** built according to the [Component Model](https://component-model.bytecodealliance.org/) or **modules** built to the core WebAssembly specification.
 
-As you begin writing a Wasm application using WASI APIs, one of your first decisions will be which type of binary you want to produce. This decision is typically guided by your use case and the runtime you wish to use. Check to see which WASI releases your runtime supports. 
+As you begin writing a Wasm application using WASI APIs, one of your first decisions will be which type of binary you want to produce. This decision is typically guided by your use case and the runtime you wish to use. Check to see which WASI releases your runtime supports.
 
 * **Components** can use WASI P2 or P3 and the Component Model for composability and interoperability, meaning that a WebAssembly component compiled from one language (Rust, for example) can communicate or be combined with a component compiled from another language (such as Go). WASI P3 adds native async support, building on the foundation established in WASI P2.
 
-* **Modules** can use APIs from WASI P1, an earlier stage of WASI's development. Since WASI P2 was released end of January 2024, WASI P1 support is more widespread among Wasm runtimes, and it is widely used in production today. 
+* **Modules** can use APIs from WASI P1, an earlier stage of WASI's development. Since WASI P2 was released end of January 2024, WASI P1 support is more widespread among Wasm runtimes, and it is widely used in production today.
 
 ## WASI releases
 
 | Release | Status | Description |
 | ------- | ------ | ----------- |
-| [WASI P3](wasi-p3.md) | Stable | Native async support with `async func`, `stream<T>`, and `future<T>`; refactored WASI P2 interfaces |
+| [WASI P3](wasi-p3.md) | Stable | Native async support with `async func`, `stream<T>`, and `future<T>` |
 | [WASI P2](wasi-p2.md) | Stable | Component Model foundation with WIT interfaces, composability, and cross-language interoperability |
 | [WASI P1](wasi-p1.md) | Legacy | POSIX-inspired module API with broad runtime support |
 
@@ -31,12 +31,12 @@ All WASI APIs are **proposals** for standardization by the WASI Subgroup. The AP
 * **Phase 1 - Feature proposal**: In this phase, the proposal is added to the proposal list and a new fork of the spec repo is created.
 * **Phase 2 - Feature description available**: During this phase, one or more implementations prototype the feature and a test suite is added.
 * **Phase 3 - Implementation phase**: At this phase, project champions create releases following the conventions of semantic versioning (semver).
-* **Phase 4 - Standardize the feature:** At this point, the feature is fully handed off to the Working Group, where edge cases are considered and only minor changes occur. 
+* **Phase 4 - Standardize the feature:** At this point, the feature is fully handed off to the Working Group, where edge cases are considered and only minor changes occur.
 * **Phase 5 - The feature is standardized**: Once the Working Group reaches consensus that the feature is complete, editors perform final editorial tweaks and merge the feature into the main branch of the primary spec repo.
 
-Proposals are first made to the **WASI Subgroup** of the [WebAssembly Community Group](https://www.w3.org/community/webassembly/). (See the [WASI Subgroup's meeting schedule](https://github.com/WebAssembly/meetings/tree/main/wasi).) 
+Proposals are first made to the **WASI Subgroup** of the [WebAssembly Community Group](https://www.w3.org/community/webassembly/). (See the [WASI Subgroup's meeting schedule](https://github.com/WebAssembly/meetings/tree/main/wasi).)
 
-All active WASI API proposals can be found on the [WASI GitHub repository](https://github.com/WebAssembly/WASI/blob/main/docs/Proposals.md). See the [Contributing to WASI page](https://github.com/WebAssembly/WASI/blob/main/Contributing.md) for information about submitting a new proposal.
+All active WASI proposals can be found on the [WASI GitHub repository](https://github.com/WebAssembly/WASI/blob/main/docs/Proposals.md). See the [Contributing to WASI page](https://github.com/WebAssembly/WASI/blob/main/Contributing.md) for information about submitting a new proposal.
 
 ## WASI test suite
 
@@ -54,7 +54,7 @@ WASI runtimes are tested against a shared test suite, [`wasi-testsuite`](https:/
 | API Proposal | Description | Repository |
 | ------------ | ----------- | ---------- |
 
-### Phase 3 - Implementation Phase (CG + WG)
+### Phase 3 - Implementation Phase (SG)
 
 | API Proposal                  | Description                                                              | Repository                                     |
 | ----------------------------- | ------------------------------------------------------------------------ | ---------------------------------------------- |
@@ -109,10 +109,6 @@ WASI runtimes are tested against a shared test suite, [`wasi-testsuite`](https:/
 ## Versioning
 
 Proposals remain in the 0.x semver range until they reach Phase 5 and are fully standardized. At that point, a 1.0 release should be made available.
-
-For some APIs, it makes sense to add new features after the API itself has reached Phase 5. These feature additions should go through the same standardization process. Once they have reached Phase 5, the minor version number of the release should be incremented.
-
-Some APIs may require backwards-incompatible changes over time. In these cases, proposals are allowed to increment the major version number _only if_ the old API can be implemented in terms of the new API. As part of the new version, champions are expected to provide a tool that enables this backwards compatibility. If that is not possible, then a new API proposal with a new name should be started. The original API can then be deprecated over time if it makes sense to do so.
 
 [wasi-blob-store]: https://github.com/WebAssembly/wasi-blob-store
 [wasi-clocks]: https://github.com/WebAssembly/WASI/tree/main/proposals/clocks
