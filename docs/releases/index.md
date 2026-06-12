@@ -11,7 +11,7 @@ As you begin writing a Wasm application using WASI APIs, one of your first decis
 
 * **Components** can use WASI P2 or P3 and the Component Model for composability and interoperability, meaning that a WebAssembly component compiled from one language (Rust, for example) can communicate or be combined with a component compiled from another language (such as Go). WASI P3 adds native async support, building on the foundation established in WASI P2.
 
-* **Modules** can use APIs from WASI P1, an earlier stage of WASI's development. Since WASI P2 was released in February 2024, WASI P1 support is more widespread among Wasm runtimes, and it is widely used in production today. 
+* **Modules** can use APIs from WASI P1, an earlier stage of WASI's development. Since WASI P2 was released end of January 2024, WASI P1 support is more widespread among Wasm runtimes, and it is widely used in production today. 
 
 ## WASI releases
 
