@@ -47,6 +47,9 @@ WASI P2 includes several patch releases:
 
 | Version                                                            | Changelog |
 | ------------------------------------------------------------------ | --------- |
+| [0.2.12](https://github.com/WebAssembly/WASI/releases/tag/v0.2.12) | This release removes the `CLI: Exit With Code` proposal from Phase 2 following its stabilization in WASI P3. |
+| [0.2.11](https://github.com/WebAssembly/WASI/releases/tag/v0.2.11) | This release includes documentation updates for `wasi:filesystem` and `wasi:sockets`. |
+| [0.2.10](https://github.com/WebAssembly/WASI/releases/tag/v0.2.10) | This release advances `wasi-otel` from Phase 0 to Phase 1. |
 | [0.2.9](https://github.com/WebAssembly/WASI/releases/tag/v0.2.9)   | This release includes a variety of organizational and documentation updates. |
 | [0.2.8](https://github.com/WebAssembly/WASI/releases/tag/v0.2.8)   | This is a regular release with no major changes. |
 | [0.2.7](https://github.com/WebAssembly/WASI/releases/tag/v0.2.7)   | This release adds a caveat about support for sync flags. |
