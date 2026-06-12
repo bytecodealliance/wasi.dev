@@ -189,8 +189,8 @@ The `len` parameter is renamed to `max-len` on `get-random-bytes` and `get-insec
 
 WASI P3 support is available in:
 
-- **[Wasmtime](https://wasmtime.dev/) 43+** for native execution
-- **[jco](https://github.com/bytecodealliance/jco)** for JavaScript environments (streams support landed; futures support following)
+- **[Wasmtime](https://wasmtime.dev/) 44+** for native execution
+- **[jco](https://github.com/bytecodealliance/jco)** for JavaScript environments (via the `preview3-shim` package; streams support landed, futures support landing)
 
 Wasmtime v44 added initial `wasi:tls@0.3.0-draft` support. From v44 onward, `wasmtime serve` can serve P3 components when invoked with `-Sp3 -W component-model-async=y`, automatically falling back to the WASI P2 `wasi:http/proxy` world for components that don't export the P3 `service` world.
 
