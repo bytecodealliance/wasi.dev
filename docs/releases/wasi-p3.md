@@ -3,7 +3,7 @@ title: "WASI P3"
 sidebar_position: 1
 ---
 
-WASI P3 brings **native async** to WebAssembly components, moving asynchronous functionality that previously lived in the `wasi:io` package down into the Component Model itself. WASI P3 was released on June 11, 2026. This page provides an overview of what changed in WASI P3 and why.
+WASI P3 brings **native async** to WebAssembly components, moving asynchronous functionality that previously lived in the `wasi:io` package down into the Component Model itself. WASI 0.3.0 was released on June 11, 2026. This page provides an overview of what changed in WASI P3 and why.
 
 ## Why native async?
 
@@ -202,7 +202,7 @@ Migration to WASI P3 is not required in order to use a P3-capable runtime. As no
 
 To migrate:
 
-- Pinning your toolchain to a consistent WASI P3 version. Wasmtime and the bindings generator (`wit-bindgen` for Rust, `jco` for JavaScript, and so on) must target the same WIT version, currently `0.3.0`. Mismatches surface as confusing `wrong type` errors at instantiation.
+- Pinning your toolchain to a consistent WASI P3 release. The Component Model defines [canonical interface names](https://github.com/WebAssembly/component-model/blob/main/design/mvp/Explainer.md#-canonical-interface-name) so that components can link across compatible versions, but not all tools support this version-aware linking yet. Until they do, Wasmtime and the bindings generator (`wit-bindgen` for Rust, `jco` for JavaScript, and so on) should target the same WIT version, `0.3.0`. Mismatches surface as confusing `wrong type` errors at instantiation.
 - Replacing `wasi:io` types with their Component Model equivalents (see the [`wasi:io` (removed)](#wasiio-removed) section above for the mapping).
 - Switching to the appropriate world: `wasi:cli/command` for CLI programs, `wasi:http/service` for HTTP servers, `wasi:http/middleware` for middleware components.
 - Updating `start-foo` / `finish-foo` call sites to use the corresponding `async func` declarations.

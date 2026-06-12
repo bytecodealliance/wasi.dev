@@ -2,7 +2,7 @@
 title: "Resources"
 sidebar_position: 5
 ---
-  
+
 The following resources are helpful for those wishing to learn more about WASI and the WebAssembly ecosystem:
 
 ## WASI
@@ -12,7 +12,7 @@ The following resources are helpful for those wishing to learn more about WASI a
 
 ## WASI P3
 
-* **[WASI P3 interfaces](https://github.com/WebAssembly/WASI/tree/main/proposals)** (see `wit/` directories within each proposal)
+* **[WASI P3 interfaces](https://github.com/WebAssembly/WASI/tree/main/proposals)** (see the `wit` directory within each proposal)
 
 ## WASI P2
 
@@ -20,7 +20,7 @@ The following resources are helpful for those wishing to learn more about WASI a
 
 ## The Component Model
 
-* **[The WebAssembly Component Model documentation](https://component-model.bytecodealliance.org/)** 
+* **[The WebAssembly Component Model documentation](https://component-model.bytecodealliance.org/)**
 * **[The Component Model GitHub repository](https://github.com/WebAssembly/component-model/tree/main)**
 * **[The WIT format](https://github.com/WebAssembly/component-model/blob/main/design/mvp/WIT.md)**
 
