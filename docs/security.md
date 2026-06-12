@@ -5,7 +5,7 @@ sidebar_position: 3
 
 WASI is built on principles of **capability-based security**. Code running under WASI has no ambient authority: a WebAssembly module or component starts with no access to the outside world and can only perform operations that the host explicitly grants. The host decides what each Wasm binary can see and touch, and that decision is enforced at the runtime boundary.
 
-This contrasts with the ambient-authority model used by operating systems like Linux or Windows, where a process inherits its user's broad permissions and can reach anything the user can reach (filesystem, network, environment variables) unless additional sandboxing is layered on top. WASI is deny-by-default.
+This contrasts with the ambient-authority model used by operating systems like Linux or Windows, where a process inherits its user's broad permissions and can reach anything the user can reach (filesystem, network, environment variables) unless additional sandboxing is layered on top. WASI is deny-by-default (or more accurately: no capability handle by default).
 
 ## How capabilities are granted
 
