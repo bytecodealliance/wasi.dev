@@ -9,23 +9,23 @@ WebAssembly binaries may be **components** built according to the [Component Mod
 
 As you begin writing a Wasm application using WASI APIs, one of your first decisions will be which type of binary you want to produce. This decision is typically guided by your use case and the runtime you wish to use. Check to see which WASI releases your runtime supports.
 
-* **Components** can use WASI P2 or P3 and the Component Model for composability and interoperability, meaning that a WebAssembly component compiled from one language (Rust, for example) can communicate or be combined with a component compiled from another language (such as Go). WASI P3 adds native async support, building on the foundation established in WASI P2.
+* **Components** can use WASI 0.2 or 0.3 and the Component Model for composability and interoperability, meaning that a WebAssembly component compiled from one language (Rust, for example) can communicate or be combined with a component compiled from another language (such as Go). WASI 0.3 adds native async support, building on the foundation established in WASI 0.2.
 
-* **Modules** can use APIs from WASI P1, an earlier stage of WASI's development. Since WASI P2 was released end of January 2024, WASI P1 support is more widespread among Wasm runtimes, and it is widely used in production today.
+* **Modules** can use APIs from WASI 0.1, an earlier stage of WASI's development. Since WASI 0.2 was released end of January 2024, WASI 0.1 support is more widespread among Wasm runtimes, and it is widely used in production today.
 
 ## WASI releases
 
 | Release | Status | Description |
 | ------- | ------ | ----------- |
-| [WASI P3](wasi-p3.md) | Stable | Native async support with `async func`, `stream<T>`, and `future<T>` |
-| [WASI P2](wasi-p2.md) | Stable | Component Model foundation with WIT interfaces, composability, and cross-language interoperability |
-| [WASI P1](wasi-p1.md) | Legacy | POSIX-inspired module API with broad runtime support |
+| [WASI 0.3](wasi-p3.md) | Stable | Native async support with `async func`, `stream<T>`, and `future<T>` |
+| [WASI 0.2](wasi-p2.md) | Stable | Component Model foundation with WIT interfaces, composability, and cross-language interoperability |
+| [WASI 0.1](wasi-p1.md) | Legacy | POSIX-inspired module API with broad runtime support |
 
 For more information on release timelines and plans, see the [Roadmap](../roadmap.md).
 
 ## Proposals for the standard
 
-All WASI APIs are **proposals** for standardization by the WASI Subgroup. The API proposals in WASI P1 and P2 met implementation and portability criteria for inclusion at the time of those releases. A proposal advances through the following stages as defined in the [WASI Subgroup's Phase Process](https://github.com/WebAssembly/WASI/blob/main/Contributing.md#the-phase-process):
+All WASI APIs are **proposals** for standardization by the WASI Subgroup. The API proposals in WASI 0.1 and 0.2 met implementation and portability criteria for inclusion at the time of those releases. A proposal advances through the following stages as defined in the [WASI Subgroup's Phase Process](https://github.com/WebAssembly/WASI/blob/main/Contributing.md#the-phase-process):
 
 * **Phase 0 - Pre-proposal**: The pre-proposal phase serves as a way to share ideas. At this phase, the WASI subgroup has not yet decided that the pre-proposal is in scope for WASI, and there may be overlap between pre-proposals.
 * **Phase 1 - Feature proposal**: In this phase, the proposal is added to the proposal list and a new fork of the spec repo is created.
@@ -40,7 +40,7 @@ All active WASI proposals can be found on the [WASI GitHub repository](https://g
 
 ## WASI test suite
 
-WASI runtimes are tested against a shared test suite, [`wasi-testsuite`](https://github.com/WebAssembly/wasi-testsuite), which exercises interfaces from WASI P1 and WASI P3 across runtime implementations. The repository includes a test runner with adapters for the major runtimes (Wasmtime, jco, WAMR, and others), and is the shared reference for verifying runtime conformance.
+WASI runtimes are tested against a shared test suite, [`wasi-testsuite`](https://github.com/WebAssembly/wasi-testsuite), which exercises interfaces from WASI 0.1 and WASI 0.3 across runtime implementations. The repository includes a test runner with adapters for the major runtimes (Wasmtime, jco, WAMR, and others), and is the shared reference for verifying runtime conformance.
 
 ## Active proposals
 
@@ -58,7 +58,7 @@ WASI runtimes are tested against a shared test suite, [`wasi-testsuite`](https:/
 
 | API Proposal                  | Description                                                              | Repository                                     |
 | ----------------------------- | ------------------------------------------------------------------------ | ---------------------------------------------- |
-| [I/O][wasi-io]                | Streams, pollables, and async wait primitives; removed in WASI P3       | https://github.com/WebAssembly/WASI/tree/main/proposals/io         |
+| [I/O][wasi-io]                | Streams, pollables, and async wait primitives; removed in WASI 0.3       | https://github.com/WebAssembly/WASI/tree/main/proposals/io         |
 | [Clocks][wasi-clocks]         | Wall-clock and monotonic-clock access                                    | https://github.com/WebAssembly/WASI/tree/main/proposals/clocks     |
 | [Random][wasi-random]         | Cryptographically secure and insecure random byte generation             | https://github.com/WebAssembly/WASI/tree/main/proposals/random     |
 | [Filesystem][wasi-filesystem] | File and directory operations on preopened directories                   | https://github.com/WebAssembly/WASI/tree/main/proposals/filesystem |
