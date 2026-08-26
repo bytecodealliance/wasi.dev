@@ -27,13 +27,13 @@ APIs designed for WASI 0.2 are defined in `.wit` files. The following interfaces
 
 | API          | WIT definitions                                                    | Description |
 | ------------ | ------------------------------------------------------------------ | ----------- |
-| I/O          | [wit](https://github.com/WebAssembly/WASI/tree/main/proposals/io/wit) | Pollable resources, input/output streams, error handling |
-| Clocks       | [wit](https://github.com/WebAssembly/WASI/tree/main/proposals/clocks/wit) | Wall clock and monotonic clock access |
-| Random       | [wit](https://github.com/WebAssembly/WASI/tree/main/proposals/random/wit) | Cryptographically secure and insecure random number generation |
-| Filesystem   | [wit](https://github.com/WebAssembly/WASI/tree/main/proposals/filesystem/wit) | File and directory operations on preopened directories |
-| Sockets      | [wit](https://github.com/WebAssembly/WASI/tree/main/proposals/sockets/wit) | TCP and UDP networking, DNS resolution |
-| CLI          | [wit](https://github.com/WebAssembly/WASI/tree/main/proposals/cli/wit) | Environment variables, arguments, stdin/stdout/stderr, process exit |
-| HTTP         | [wit](https://github.com/WebAssembly/WASI/tree/main/proposals/http/wit) | HTTP request/response handling for clients and servers |
+| I/O          | [wit](https://github.com/WebAssembly/WASI/tree/wasi-0.2/proposals/io/wit) | Pollable resources, input/output streams, error handling |
+| Clocks       | [wit](https://github.com/WebAssembly/WASI/tree/wasi-0.2/proposals/clocks/wit) | Wall clock and monotonic clock access |
+| Random       | [wit](https://github.com/WebAssembly/WASI/tree/wasi-0.2/proposals/random/wit) | Cryptographically secure and insecure random number generation |
+| Filesystem   | [wit](https://github.com/WebAssembly/WASI/tree/wasi-0.2/proposals/filesystem/wit) | File and directory operations on preopened directories |
+| Sockets      | [wit](https://github.com/WebAssembly/WASI/tree/wasi-0.2/proposals/sockets/wit) | TCP and UDP networking, DNS resolution |
+| CLI          | [wit](https://github.com/WebAssembly/WASI/tree/wasi-0.2/proposals/cli/wit) | Environment variables, arguments, stdin/stdout/stderr, process exit |
+| HTTP         | [wit](https://github.com/WebAssembly/WASI/tree/wasi-0.2/proposals/http/wit) | HTTP request/response handling for clients and servers |
 
 You can explore the types and definitions for a given WASI 0.2 API in its WIT files. When you're ready to start using the API, you will typically generate bindings between the WIT definitions and the language you will be compiling to Wasm. For more information on WIT, see the [WIT section of the Component Model documentation](https://component-model.bytecodealliance.org/design/wit.html).
 
@@ -63,6 +63,6 @@ WASI 0.2 includes several patch releases:
 
 ## Further reading
 
-- [WASI 0.2 GitHub repository](https://github.com/WebAssembly/WASI/blob/main/wasip2/README.md)
+- [WASI 0.2 GitHub repository](https://github.com/WebAssembly/WASI/tree/wasi-0.2)
 - [Component Model documentation](https://component-model.bytecodealliance.org/)
 - [Roadmap](../roadmap.md)
