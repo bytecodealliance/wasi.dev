@@ -1,38 +1,51 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 250" role="img" aria-labelledby="t d">
-  <title id="t">WASI release timeline</title>
-  <desc id="d">WASI 0.2.0 shipped in January 2024, followed by patch releases 0.2.1 through 0.2.12. WASI 0.3.0 shipped in June 2026, followed by 0.3.x patch releases every two months through 2027.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 240" role="img" aria-labelledby="title desc">
+  <title id="title">WASI release timeline</title>
+  <desc id="desc">WASI 0.2.0 shipped in January 2024, followed by patch releases 0.2.1 through 0.2.12 every two months. WASI 0.3.0 shipped in June 2026, followed by 0.3.x patch releases every two months through 2027.</desc>
   <g fill="none" stroke="#6b7280" stroke-width="2">
     <line x1="45" y1="120" x2="1140" y2="120" />
-  <line x1="110" y1="102" x2="110" y2="120" />
-  <line x1="365" y1="102" x2="365" y2="120" />
-  <line x1="620" y1="102" x2="620" y2="120" />
-  <line x1="875" y1="102" x2="875" y2="120" />
-  <line x1="775.5" y1="120" x2="775.5" y2="138" />
-  <line x1="818.9" y1="120" x2="818.9" y2="138" />
-  <line x1="859.7" y1="120" x2="859.7" y2="138" />
-  <line x1="903.0" y1="120" x2="903.0" y2="138" />
-  <line x1="946.4" y1="120" x2="946.4" y2="138" />
-  <line x1="987.2" y1="120" x2="987.2" y2="138" />
-  <line x1="1030.5" y1="120" x2="1030.5" y2="138" />
-  <line x1="1073.9" y1="120" x2="1073.9" y2="138" />
-  <line x1="1117.3" y1="120" x2="1117.3" y2="138" />
-    <path d="M 258 168 v -12 h 442 v 12" stroke-width="1.5" />
+    <line x1="110" y1="102" x2="110" y2="120" />
+    <line x1="365" y1="102" x2="365" y2="120" />
+    <line x1="620" y1="102" x2="620" y2="120" />
+    <line x1="875" y1="102" x2="875" y2="120" />
+    <line x1="257.9" y1="120" x2="257.9" y2="136" />
+    <line x1="301.2" y1="120" x2="301.2" y2="136" />
+    <line x1="347.2" y1="120" x2="347.2" y2="136" />
+    <line x1="390.5" y1="120" x2="390.5" y2="136" />
+    <line x1="428.8" y1="120" x2="428.8" y2="136" />
+    <line x1="477.2" y1="120" x2="477.2" y2="136" />
+    <line x1="520.5" y1="120" x2="520.5" y2="136" />
+    <line x1="561.3" y1="120" x2="561.3" y2="136" />
+    <line x1="599.6" y1="120" x2="599.6" y2="136" />
+    <line x1="642.9" y1="120" x2="642.9" y2="136" />
+    <line x1="686.3" y1="120" x2="686.3" y2="136" />
+    <line x1="727.1" y1="120" x2="727.1" y2="136" />
+    <line x1="775.5" y1="120" x2="775.5" y2="136" />
+    <line x1="818.9" y1="120" x2="818.9" y2="136" />
+    <line x1="859.7" y1="120" x2="859.7" y2="136" />
+    <line x1="903.0" y1="120" x2="903.0" y2="136" />
+    <line x1="946.4" y1="120" x2="946.4" y2="136" />
+    <line x1="987.2" y1="120" x2="987.2" y2="136" />
+    <line x1="1030.5" y1="120" x2="1030.5" y2="136" />
+    <line x1="1073.9" y1="120" x2="1073.9" y2="136" />
+    <line x1="1117.3" y1="120" x2="1117.3" y2="136" />
+    <path d="M 128 178 v -50" />
+    <path d="M 732 178 v -50" />
   </g>
-  <polygon points="1140,113 1162,120 1140,127" fill="#6b7280" />
+  <g fill="#6b7280">
+    <polygon points="1140,113 1162,120 1140,127" />
+    <polygon points="121,136 128,122 135,136" />
+    <polygon points="725,136 732,122 739,136" />
+  </g>
   <g fill="#6b7280" font-family="system-ui, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="26">
-  <text x="110" y="88" text-anchor="middle">2024</text>
-  <text x="365" y="88" text-anchor="middle">2025</text>
-  <text x="620" y="88" text-anchor="middle">2026</text>
-  <text x="875" y="88" text-anchor="middle">2027</text>
-    <text x="128" y="196" text-anchor="middle">WASI 0.2.0</text>
-    <text x="128" y="226" text-anchor="middle">January 2024</text>
-    <text x="479" y="192" text-anchor="middle" font-size="23">0.2.1 to 0.2.12</text>
-    <text x="732" y="196" text-anchor="middle">WASI 0.3.0</text>
-    <text x="732" y="226" text-anchor="middle">June 2026</text>
-    <text x="960" y="172" text-anchor="middle" font-size="23">0.3.x every two months</text>
-  </g>
-  <g fill="none" stroke="#6b7280" stroke-width="2">
-    <path d="M 128 168 v -40" /><polygon points="121,136 128,124 135,136" fill="#6b7280" stroke="none" />
-    <path d="M 732 168 v -40" /><polygon points="725,136 732,124 739,136" fill="#6b7280" stroke="none" />
+    <text x="110" y="88" text-anchor="middle">2024</text>
+    <text x="365" y="88" text-anchor="middle">2025</text>
+    <text x="620" y="88" text-anchor="middle">2026</text>
+    <text x="875" y="88" text-anchor="middle">2027</text>
+    <text x="492" y="164" text-anchor="middle" font-size="23">0.2.1 to 0.2.12</text>
+    <text x="957" y="164" text-anchor="middle" font-size="23">0.3.x every two months</text>
+    <text x="128" y="206" text-anchor="middle">WASI 0.2.0</text>
+    <text x="128" y="234" text-anchor="middle">January 2024</text>
+    <text x="732" y="206" text-anchor="middle">WASI 0.3.0</text>
+    <text x="732" y="234" text-anchor="middle">June 2026</text>
   </g>
 </svg>
