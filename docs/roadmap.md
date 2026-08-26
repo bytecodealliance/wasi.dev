@@ -40,18 +40,10 @@ WASI 0.3 adds **native async support** to the Component Model and refactors WASI
 
 Implementations may continue to support WASI 0.2 alongside 0.3, either by implementing both versions or by virtualizing (polyfilling) 0.2 in terms of 0.3.
 
-Following WASI 0.3.0, a series of incremental and backwards-compatible 0.3.x releases will occur on the release train model. As projected in February 2025, these patch releases are expected to include:
+Following WASI 0.3.0, incremental and backwards-compatible 0.3.x releases ship on the release train. WASI 0.3.1 adopted the Component Model `map<K, V>` type and the `implements` and `external-id` annotations, which WASI interfaces may use from that release onward.
 
-* **Cancellation** automatically integrated with language idioms
-* **Specialization** of `tuple<stream<u8>, future<result<trailers, http-error>>>` existing in 0.3.0
-* **Stream optimization** with Canonical ABI built-ins for forwarding/splicing, skipping/writing-zeroes, stream data segment, and lulls
-* **Caller-supplied buffers** with more zero-copy in more scenarios
-* **Threads**: first cooperative, then preemptive
-
-You can find more information in the [WebAssembly CG presentation from February 2025](https://docs.google.com/presentation/d/1z0WXS5BLFtbVynM9xAyilecYskN1IKe9Dad1nDEmgU8/edit#slide=id.g33067d21cc1_0_5).
+Later releases may adopt further Component Model features. Candidates are developed behind [gated features](https://github.com/WebAssembly/component-model/blob/main/design/mvp/Explainer.md#gated-features) and reach a WASI release only after a Subgroup vote, as described in [Component Model features](releases/index.md#component-model-features). Current candidates include threading built-ins, stackful async lift, fixed-length lists, the `error-context` type, and canonical interface names.
 
 ## Project timeline
 
-The provisional timeline for WASI releases is as follows:
-
-![The WASI timeline projects a WASI 0.3 release in summer 2026](../static/img/wasi-timeline.webp)
+![Timeline of WASI releases. WASI 0.2.0 shipped in January 2024, followed by patch releases through 0.2.12. WASI 0.3.0 shipped in June 2026, followed by 0.3.x patch releases every two months through 2027.](../static/img/wasi-timeline.svg)
