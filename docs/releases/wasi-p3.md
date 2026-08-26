@@ -192,7 +192,9 @@ WASI 0.3 support is available in:
 - **[Wasmtime](https://wasmtime.dev/)** 46 and later, which enables WASI 0.3 and the `component-model-async` feature by default
 - **[jco](https://github.com/bytecodealliance/jco)** for JavaScript environments
 
-Wasmtime 46 is the first release to implement released WASI 0.3.0. Wasmtime 41 through 45 implement the `0.3.0-rc-2026-03-15` snapshot instead, and require `-Sp3 -W component-model-async=y`; Wasmtime 44 added initial `wasi:tls@0.3.0-draft` support on that snapshot. `wasmtime serve` accepts either a WASI 0.3 or a WASI 0.2 component, falling back to the WASI 0.2 `wasi:http/proxy` world for components that don't export the 0.3 `service` world.
+Wasmtime 46 is the first release to implement the final WASI 0.3.0 specification. Wasmtime 43 through 45 implement the `0.3.0-rc-2026-03-15` snapshot, and Wasmtime 41 and 42 the earlier `0.3.0-rc-2026-01-06` snapshot; all of these require `-Sp3 -W component-model-async=y`. Wasmtime 44 added initial `wasi:tls@0.3.0-draft` support.
+
+`wasmtime serve` accepts either a WASI 0.3 or a WASI 0.2 component, falling back to the WASI 0.2 `wasi:http/proxy` world for components that do not export the 0.3 `service` world.
 
 Implementing WASI 0.3.1 requires the Component Model features adopted in 0.3.0 (`async` lift and lower, `future`, and `stream`) plus those adopted in 0.3.1 (the `map<K, V>` type and the `implements` and `external-id` annotations), on top of the ungated baseline. See [Component Model features](index.md#component-model-features) for the full list.
 

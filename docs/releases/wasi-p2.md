@@ -59,7 +59,7 @@ WASI 0.2 includes several patch releases:
 | [0.2.3](https://github.com/WebAssembly/WASI/releases/tag/v0.2.3)   | This release includes minor documentation updates. |
 | [0.2.2](https://github.com/WebAssembly/WASI/releases/tag/v0.2.2)   | This release includes new WIT features for `@deprecated` feature gates and is exercised in the [wasi:http/proxy](https://github.com/WebAssembly/wasi-http/blob/main/wit/types.wit#L148-L158) world. For more information, see [component-model/WIT.md](https://github.com/WebAssembly/component-model/blob/main/design/mvp/WIT.md#feature-gates). |
 | [0.2.1](https://github.com/WebAssembly/WASI/releases/tag/v0.2.1)   | This release includes new WIT features for `@since` and `@unstable` feature gates. For more information, see [component-model/WIT.md](https://github.com/WebAssembly/component-model/blob/main/design/mvp/WIT.md#feature-gates). |
-| [0.2.0](https://github.com/WebAssembly/WASI/releases/tag/v0.2.0)   | This version officially launched with the vote in the WASI Subgroup January 24th, 2024. |
+| [0.2.0](https://github.com/WebAssembly/WASI/releases/tag/v0.2.0)   | This version officially launched with the vote in the WASI Subgroup January 25th, 2024. |
 
 ## Further reading
 
