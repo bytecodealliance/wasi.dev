@@ -7,7 +7,28 @@ This roadmap is a living document representing projected timelines for WASI rele
 
 ## WASI Releases
 
-WASI point releases occur every two months, on the first Thursday of that month, on a **release train model**: a regular cadence in which releases are published regardless of the enhancements and fixes that are "ready for the train." Point releases include smaller features and bug fixes, while major features and breaking changes are generally reserved for major versions.
+WASI point releases follow a **release train model**: a regular cadence in which releases are published regardless of the enhancements and fixes that are "ready for the train." Point releases include smaller features and bug fixes, while major features and breaking changes are generally reserved for major versions.
+
+WASI 0.3 point releases ship every two months, on the second Tuesday of the month. The WASI 0.2 series ran on the same cadence, on the first Tuesday of the month.
+
+WASI 0.3.0 was an exception to the release train, shipping on June 11, 2026 following a WASI Subgroup vote. WASI 1.0 may also be scheduled outside the train. The cadence after 1.0 is undetermined.
+
+### Scheduled releases
+
+| Release | Date |
+| ------- | ---- |
+| WASI 0.3.0 | June 11, 2026 |
+| WASI 0.3.1 | August 11, 2026 |
+| WASI 0.3.2 | October 13, 2026 |
+| WASI 0.3.3 | December 8, 2026 |
+| WASI 0.3.4 | February 9, 2027 |
+| WASI 0.3.5 | April 13, 2027 |
+| WASI 0.3.6 | June 8, 2027 |
+| WASI 0.3.7 | August 10, 2027 |
+| WASI 0.3.8 | October 12, 2027 |
+| WASI 0.3.9 | December 14, 2027 |
+
+Releases are cut by a WASI Subgroup co-chair through an automated GitHub Actions workflow. For the full process, see [Release](https://github.com/WebAssembly/WASI/blob/main/docs/Release.md) in the WASI repository.
 
 ## WASI 0.3
 
