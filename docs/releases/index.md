@@ -17,9 +17,11 @@ As you begin writing a Wasm application using WASI APIs, one of your first decis
 
 | Release | Status | Description |
 | ------- | ------ | ----------- |
-| [WASI 0.3](wasi-p3.md) | Stable | Native async support with `async func`, `stream<T>`, and `future<T>` |
-| [WASI 0.2](wasi-p2.md) | Stable | Component Model foundation with WIT interfaces, composability, and cross-language interoperability |
+| [WASI 0.3](wasi-p3.md) | Stable, current | Native async support with `async func`, `stream<T>`, and `future<T>` |
+| [WASI 0.2](wasi-p2.md) | Stable, superseded by 0.3 | Component Model foundation with WIT interfaces, composability, and cross-language interoperability |
 | [WASI 0.1](wasi-p1.md) | Legacy | POSIX-inspired module API with broad runtime support |
+
+Target WASI 0.3 where your toolchain supports it. Rust and JavaScript have WASI 0.3 bindings today, and [Wasmtime](https://wasmtime.dev/) 46 and later runs WASI 0.3 components by default. Support in other toolchains is still landing, so check the [Languages](../languages.md) page first and target WASI 0.2 if your language is not there yet. A WASI 0.3 runtime also runs WASI 0.2 components, so choosing 0.2 today does not close off 0.3 later.
 
 For more information on release timelines and plans, see the [Roadmap](../roadmap.md).
 
