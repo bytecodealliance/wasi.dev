@@ -44,4 +44,4 @@ Later releases may adopt further Component Model features. Candidates are develo
 
 ## Project timeline
 
-![Timeline of WASI releases. WASI 0.2.0 shipped in January 2024, followed by twelve patch releases through 0.2.12. WASI 0.3.0 shipped two and a half years later, in June 2026, followed by 0.3.1 in August 2026. Further 0.3.x patch releases are planned every two months through 2027.](../static/img/wasi-timeline.svg)
+![Timeline of WASI releases. WASI 0.2.0 shipped in January 2024, followed by twelve patch releases every two months through 0.2.12. WASI 0.3.0 shipped two and a half years later, in June 2026, followed by 0.3.1 in August 2026. Further 0.3.x patch releases are planned every two months through 2027.](../static/img/wasi-timeline.svg)
