@@ -3,7 +3,7 @@ title: "WASI 0.2"
 sidebar_position: 2
 ---
 
-WASI 0.2 is a stable WASI release, superseded by [WASI 0.3](wasi-p3.md) and still widely supported. It marked the full rebase of WASI onto the [Component Model](https://component-model.bytecodealliance.org/) and the [WebAssembly Interface Type (WIT)](https://github.com/WebAssembly/component-model/blob/main/design/mvp/WIT.md) Interface Description Language, replacing the C-like WITX IDL used in WASI 0.1.
+WASI 0.2 is a stable release, superseded by [WASI 0.3](wasi-p3.md) but still widely supported. It marked the full rebase of WASI onto the [Component Model](https://component-model.bytecodealliance.org/) and the [WebAssembly Interface Type (WIT)](https://github.com/WebAssembly/component-model/blob/main/design/mvp/WIT.md) Interface Description Language, replacing the C-like WITX IDL used in WASI 0.1.
 
 ## Overview
 
