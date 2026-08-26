@@ -21,7 +21,7 @@ As you begin writing a Wasm application using WASI APIs, one of your first decis
 | [WASI 0.2](wasi-p2.md) | Stable, superseded by 0.3 | Component Model foundation with WIT interfaces, composability, and cross-language interoperability |
 | [WASI 0.1](wasi-p1.md) | Legacy | POSIX-inspired module API with broad runtime support |
 
-Target WASI 0.3 where your toolchain supports it. Rust and JavaScript have WASI 0.3 bindings today, and [Wasmtime](https://wasmtime.dev/) 46 and later runs WASI 0.3 components by default. Support in other toolchains is still landing, so check the [Languages](../languages.md) page first and target WASI 0.2 if your language is not there yet. A WASI 0.3 runtime also runs WASI 0.2 components, so choosing 0.2 today does not close off 0.3 later.
+Which version to target depends on your toolchain. WASI 0.3 is the current release: [Wasmtime](https://wasmtime.dev/) 46 and later runs 0.3 components by default, Rust has 0.3 bindings in the `wasip3` crate, and jco ships an experimental 0.3 shim for Node.js. Most other toolchains still target WASI 0.2. Check the [Languages](../languages.md) page for your language before choosing. Runtimes with 0.3 support, including Wasmtime and jco, also run WASI 0.2 components, so starting on 0.2 does not close off 0.3 later.
 
 For more information on release timelines and plans, see the [Roadmap](../roadmap.md).
 
@@ -56,17 +56,15 @@ Adoption is cumulative. Implementing a given WASI version requires the ungated C
 | 0.3.1        | The `map<K, V>` type                                                                       | [August 6, 2026](https://github.com/WebAssembly/meetings/blob/main/wasi/2026/WASI-08-06.md) ([#943](https://github.com/WebAssembly/WASI/issues/943)) |
 | 0.3.1        | `implements` and `external-id` annotations on plain-named interface imports and exports    | [August 6, 2026](https://github.com/WebAssembly/meetings/blob/main/wasi/2026/WASI-08-06.md) ([#942](https://github.com/WebAssembly/WASI/issues/942)) |
 
-The Component Model Explainer marks each of these with a gate symbol.
-
 A feature becomes eligible for adoption once its design is complete, multiple runtimes and toolchains have implemented it, and the resulting feedback has been incorporated. Proposals may experiment with features that have not been adopted, but only in prerelease versions such as `0.3.0-rc-*`, or in proposals that have not yet shipped in a stable WASI release. Stable releases must remain implementable without them, and CI enforces this by validating each changed proposal against the adopted feature set.
 
 See [Component Model features in WASI](https://github.com/WebAssembly/WASI/blob/main/docs/ComponentModelFeatures.md) for the full adoption record, and [Adopting Component Model features](https://github.com/WebAssembly/WASI/blob/main/CONTRIBUTING.md#adopting-component-model-features) for the process.
 
 ## Active proposals
 
-### Phases 4 and 5 - To be determined (WG)
+### Phases 4 and 5 - To Be Determined
 
-No proposals have reached these phases yet.
+These phases are not yet defined, so no proposals have entered them.
 
 ### Phase 3 - Implementation Phase (CG + WG)
 
@@ -78,6 +76,8 @@ No proposals have reached these phases yet.
 | [Sockets][wasi-sockets]       | TCP and UDP networking, plus DNS resolution                              | https://github.com/WebAssembly/WASI/tree/main/proposals/sockets    |
 | [CLI][wasi-cli]               | Environment variables, command-line arguments, stdio, and process exit   | https://github.com/WebAssembly/WASI/tree/main/proposals/cli        |
 | [HTTP][wasi-http]             | Incoming and outgoing HTTP request and response handling                 | https://github.com/WebAssembly/WASI/tree/main/proposals/http       |
+
+The `wasi:io` proposal was part of WASI 0.2 and was removed in WASI 0.3. Its interfaces are listed on the [WASI 0.2](wasi-p2.md) page.
 
 ### Phase 2 - Proposed Spec Text Available (CG + WG)
 
@@ -121,7 +121,7 @@ No proposals have reached these phases yet.
 
 ## Versioning
 
-Proposals remain in the 0.x semver range until they reach Phase 5 and are fully standardized. At that point, a 1.0 release should be made available.
+Proposals remain in the 0.x semver range while they advance through the phase process. A WASI 1.0 release would follow full standardization, once the WASI Subgroup, the WebAssembly Community Group, and the WebAssembly Working Group have defined what that requires.
 
 [wasi-blob-store]: https://github.com/WebAssembly/wasi-blob-store
 [wasi-clocks]: https://github.com/WebAssembly/WASI/tree/main/proposals/clocks
