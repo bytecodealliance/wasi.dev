@@ -3,7 +3,7 @@ title: "WASI 0.2"
 sidebar_position: 2
 ---
 
-WASI 0.2 is the most recent stable WASI release. It marked the full rebase of WASI onto the [Component Model](https://component-model.bytecodealliance.org/) and the [WebAssembly Interface Type (WIT)](https://github.com/WebAssembly/component-model/blob/main/design/mvp/WIT.md) Interface Description Language, replacing the C-like WITX IDL used in WASI 0.1.
+WASI 0.2 is a stable release, superseded by [WASI 0.3](wasi-p3.md) but still widely supported. It marked the full rebase of WASI onto the [Component Model](https://component-model.bytecodealliance.org/) and the [WebAssembly Interface Type (WIT)](https://github.com/WebAssembly/component-model/blob/main/design/mvp/WIT.md) Interface Description Language, replacing the C-like WITX IDL used in WASI 0.1.
 
 ## Overview
 
@@ -39,7 +39,7 @@ You can explore the types and definitions for a given WASI 0.2 API in its WIT fi
 
 ## Runtime support
 
-WASI 0.2 portability criteria were met by [Wasmtime](https://wasmtime.dev/) and [jco](https://github.com/bytecodealliance/jco), both of which passed the WASI 0.2 test suite at the time of certification. Other runtimes including [WAMR](https://bytecodealliance.github.io/wamr.dev/) and [WasmEdge](https://wasmedge.org/) have varying levels of WASI 0.2 support.
+WASI 0.2 portability criteria were met by [Wasmtime](https://wasmtime.dev/) and [jco](https://github.com/bytecodealliance/jco), both of which passed the WASI 0.2 test suite at the time of certification. Other runtimes including [WAMR](https://wamr.dev/) and [WasmEdge](https://wasmedge.org/) have varying levels of WASI 0.2 support.
 
 ## Patch releases
 
