@@ -44,20 +44,22 @@ WASI runtimes are tested against a shared test suite, [`wasi-testsuite`](https:/
 
 ## Component Model features
 
-WASI APIs are defined in terms of the [Component Model](https://component-model.bytecodealliance.org/), which develops new WIT syntax, types, and Canonical ABI functionality behind [gated features](https://github.com/WebAssembly/component-model/blob/main/design/mvp/Explainer.md#gated-features). A stable WASI API may depend on a gated feature only after the WASI Subgroup votes to adopt it, through a process that parallels the phase process above.
+WASI APIs are defined in terms of the [Component Model](https://component-model.bytecodealliance.org/), which introduces new WIT syntax, types, and Canonical ABI functionality behind [gated features](https://github.com/WebAssembly/component-model/blob/main/design/mvp/Explainer.md#gated-features): opt-in flags marking work that is not yet part of the default feature set. A stable WASI API, one marked `@since` rather than `@unstable`, may depend on a gated feature only after the WASI Subgroup votes to adopt it, using the same kind of Subgroup vote as a phase advancement.
 
-Adoption is cumulative. Implementing a given WASI version requires the ungated Component Model features, plus every feature adopted in that version and in all earlier versions. Adoption does not mean that a WASI API uses the feature: runtimes and toolchains implementing that WASI version must support it either way.
+Adoption is cumulative. Implementing a given WASI version requires the ungated Component Model features, plus every feature adopted in that version and in all earlier versions. Adoption does not mean that any WASI API uses the feature yet. It means that WASI APIs in that release and later may use it, and that every runtime and toolchain implementing that WASI version must support it either way.
 
-| WASI version | Gate | Feature                                                                                | Adopted                                                                                                     |
-| ------------ | ---- | -------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
-| 0.2.0        | None | The default ungated Component Model features                                           | WASI 0.2 vote (predates this process)                                                                       |
-| 0.3.0        | 🔀   | `async` lift and lower, `future` and `stream`                                          | WASI 0.3 vote (predates this process)                                                                       |
-| 0.3.1        | 🗺️   | The `map<K, V>` type                                                                   | [August 6, 2026](https://github.com/WebAssembly/meetings/blob/main/wasi/2026/WASI-08-06.md)                  |
-| 0.3.1        | 🏷️   | `implements` and `external-id` annotations on plain-named interface imports and exports | [August 6, 2026](https://github.com/WebAssembly/meetings/blob/main/wasi/2026/WASI-08-06.md)                  |
+| WASI Version | Component Model Features Required                                                        | Adopted                                                                                       |
+| ------------ | ------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------- |
+| 0.2.0        | The default ungated Component Model features                                               | WASI 0.2 vote (predates this process)                                                         |
+| 0.3.0        | `async` lift and lower, `future`, and `stream`                                             | WASI 0.3 vote (predates this process)                                                         |
+| 0.3.1        | The `map<K, V>` type                                                                       | [August 6, 2026](https://github.com/WebAssembly/meetings/blob/main/wasi/2026/WASI-08-06.md) ([#943](https://github.com/WebAssembly/WASI/issues/943)) |
+| 0.3.1        | `implements` and `external-id` annotations on plain-named interface imports and exports    | [August 6, 2026](https://github.com/WebAssembly/meetings/blob/main/wasi/2026/WASI-08-06.md) ([#942](https://github.com/WebAssembly/WASI/issues/942)) |
 
-A feature becomes eligible for adoption once its design is complete and it has been implemented across multiple runtimes and toolchains, with the feedback from that use incorporated. Proposals may experiment with features that have not been adopted, but only in prerelease versions such as `0.3.0-rc-*`. Stable releases must remain implementable without them, and CI enforces this by validating each changed proposal against the adopted feature set.
+The Component Model Explainer marks each of these with a gate symbol.
 
-For the full adoption record, see [Component Model features in WASI](https://github.com/WebAssembly/WASI/blob/main/docs/ComponentModelFeatures.md). For the adoption process, see [Adopting Component Model features](https://github.com/WebAssembly/WASI/blob/main/CONTRIBUTING.md#adopting-component-model-features).
+A feature becomes eligible for adoption once its design is complete, multiple runtimes and toolchains have implemented it, and the resulting feedback has been incorporated. Proposals may experiment with features that have not been adopted, but only in prerelease versions such as `0.3.0-rc-*`, or in proposals that have not yet shipped in a stable WASI release. Stable releases must remain implementable without them, and CI enforces this by validating each changed proposal against the adopted feature set.
+
+See [Component Model features in WASI](https://github.com/WebAssembly/WASI/blob/main/docs/ComponentModelFeatures.md) for the full adoption record, and [Adopting Component Model features](https://github.com/WebAssembly/WASI/blob/main/CONTRIBUTING.md#adopting-component-model-features) for the process.
 
 ## Active proposals
 
