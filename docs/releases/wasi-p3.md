@@ -3,7 +3,7 @@ title: "WASI 0.3"
 sidebar_position: 1
 ---
 
-WASI 0.3 brings **native async** to WebAssembly components, moving asynchronous functionality that previously lived in the `wasi:io` package down into the Component Model itself. WASI 0.3.0 was released on June 11, 2026. This page provides an overview of what changed in WASI 0.3 and why.
+WASI 0.3 brings **native async** to WebAssembly components, moving asynchronous functionality that previously lived in the `wasi:io` package down into the Component Model itself. WASI 0.3.0 was released on June 11, 2026, followed by patch releases every two months. This page provides an overview of what changed in WASI 0.3 and why.
 
 ## Why native async?
 
@@ -189,10 +189,10 @@ The `len` parameter is renamed to `max-len` on `get-random-bytes` and `get-insec
 
 WASI 0.3 support is available in:
 
-- **[Wasmtime](https://wasmtime.dev/)** Wasmtime 45 runs the latest release candidate today, and Wasmtime 46 will ship WASI 0.3.0 with Component Model Async enabled by default.
+- **[Wasmtime](https://wasmtime.dev/)**, which supports WASI 0.3.0 by default from Wasmtime 46 onward, with the `component-model-async` feature enabled by default
 - **[jco](https://github.com/bytecodealliance/jco)** for JavaScript environments
 
-Wasmtime v44 added initial `wasi:tls@0.3.0-draft` support. From v44 onward, `wasmtime serve` can serve 0.3 components when invoked with `-Sp3 -W component-model-async=y`, automatically falling back to the WASI 0.2 `wasi:http/proxy` world for components that don't export the 0.3 `service` world.
+Wasmtime v44 added initial `wasi:tls@0.3.0-draft` support. From v44 onward, `wasmtime serve` serves both WASI 0.3 and WASI 0.2 components from the same binary, falling back to the WASI 0.2 `wasi:http/proxy` world for components that don't export the 0.3 `service` world. On v44 and v45 this requires `-Sp3 -W component-model-async=y`.
 
 Runtimes verify WASI 0.3 conformance against the shared [`wasi-testsuite`](https://github.com/WebAssembly/wasi-testsuite). WASI 0.3 coverage is now running on Wasmtime and jco across Linux, macOS, and Windows.
 
@@ -207,7 +207,16 @@ To migrate:
 - Switching to the appropriate world: `wasi:cli/command` for CLI programs, `wasi:http/service` for HTTP servers, `wasi:http/middleware` for middleware components.
 - Updating `start-foo` / `finish-foo` call sites to use the corresponding `async func` declarations.
 
-A detailed 0.2-to-0.3 migration guide with working examples is forthcoming in the [Component Model documentation](https://component-model.bytecodealliance.org/).
+For a detailed migration guide with working examples, see [Migrating from WASI 0.2 to WASI 0.3](https://component-model.bytecodealliance.org/design/migrating-to-p3.html) in the Component Model documentation.
+
+## Patch releases
+
+WASI 0.3 patch releases ship every two months on the release train. See the [Roadmap](../roadmap.md) for the schedule.
+
+| Version                                                          | Changelog |
+| ---------------------------------------------------------------- | --------- |
+| [0.3.1](https://github.com/WebAssembly/WASI/releases/tag/v0.3.1) | Released August 11, 2026. Adopts the Component Model `map<K, V>` type and the `implements` annotation, which WASI interfaces may use from this release onward. Runtimes and toolchains must support both to be compatible with WASI 0.3.1 and later. |
+| [0.3.0](https://github.com/WebAssembly/WASI/releases/tag/v0.3.0) | Released June 11, 2026. The initial WASI 0.3 release, rebasing WASI onto the Component Model's native async primitives. |
 
 ## Further reading
 

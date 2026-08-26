@@ -25,18 +25,17 @@ For more information on release timelines and plans, see the [Roadmap](../roadma
 
 ## Proposals for the standard
 
-All WASI APIs are **proposals** for standardization by the WASI Subgroup. The API proposals in WASI 0.1 and 0.2 met implementation and portability criteria for inclusion at the time of those releases. A proposal advances through the following stages as defined in the [WASI Subgroup's Phase Process](https://github.com/WebAssembly/WASI/blob/main/Contributing.md#the-phase-process):
+All WASI APIs are **proposals** for standardization by the WASI Subgroup. The API proposals in WASI 0.1 and 0.2 met implementation and portability criteria for inclusion at the time of those releases. A proposal advances through the following stages as defined in the [WASI Subgroup's Phase Process](https://github.com/WebAssembly/WASI/blob/main/CONTRIBUTING.md#the-phase-process):
 
 * **Phase 0 - Pre-proposal**: The pre-proposal phase serves as a way to share ideas. At this phase, the WASI subgroup has not yet decided that the pre-proposal is in scope for WASI, and there may be overlap between pre-proposals.
 * **Phase 1 - Feature proposal**: In this phase, the proposal is added to the proposal list and a new fork of the spec repo is created.
-* **Phase 2 - Feature description available**: During this phase, one or more implementations prototype the feature and a test suite is added.
+* **Phase 2 - Feature description available**: To enter this phase, a proposal documents its portability criteria and publishes its WIT description to an OCI registry. During this phase, one or more implementations prototype the feature and a test suite is added.
 * **Phase 3 - Implementation phase**: At this phase, project champions create releases following the conventions of semantic versioning (semver).
-* **Phase 4 - Standardize the feature:** At this point, the feature is fully handed off to the Working Group, where edge cases are considered and only minor changes occur.
-* **Phase 5 - The feature is standardized**: Once the Working Group reaches consensus that the feature is complete, editors perform final editorial tweaks and merge the feature into the main branch of the primary spec repo.
+* **Phases 4 and 5 - Standardization**: Phases 4 and 5 are where a feature is finished and standardized. As WASI matures, the WASI Subgroup will coordinate with the WebAssembly Community Group and the WebAssembly Working Group to define this process.
 
 Proposals are first made to the **WASI Subgroup** of the [WebAssembly Community Group](https://www.w3.org/community/webassembly/). (See the [WASI Subgroup's meeting schedule](https://github.com/WebAssembly/meetings/tree/main/wasi).)
 
-All active WASI proposals can be found on the [WASI GitHub repository](https://github.com/WebAssembly/WASI/blob/main/docs/Proposals.md). See the [Contributing to WASI page](https://github.com/WebAssembly/WASI/blob/main/Contributing.md) for information about submitting a new proposal.
+All active WASI proposals can be found on the [WASI GitHub repository](https://github.com/WebAssembly/WASI/blob/main/docs/Proposals.md). See the [Contributing to WASI page](https://github.com/WebAssembly/WASI/blob/main/CONTRIBUTING.md) for information about submitting a new proposal.
 
 ## WASI test suite
 
@@ -58,7 +57,6 @@ WASI runtimes are tested against a shared test suite, [`wasi-testsuite`](https:/
 
 | API Proposal                  | Description                                                              | Repository                                     |
 | ----------------------------- | ------------------------------------------------------------------------ | ---------------------------------------------- |
-| [I/O][wasi-io]                | Streams, pollables, and async wait primitives; removed in WASI 0.3       | https://github.com/WebAssembly/WASI/tree/main/proposals/io         |
 | [Clocks][wasi-clocks]         | Wall-clock and monotonic-clock access                                    | https://github.com/WebAssembly/WASI/tree/main/proposals/clocks     |
 | [Random][wasi-random]         | Cryptographically secure and insecure random byte generation             | https://github.com/WebAssembly/WASI/tree/main/proposals/random     |
 | [Filesystem][wasi-filesystem] | File and directory operations on preopened directories                   | https://github.com/WebAssembly/WASI/tree/main/proposals/filesystem |
@@ -76,7 +74,7 @@ WASI runtimes are tested against a shared test suite, [`wasi-testsuite`](https:/
 | [Key-value Store][wasi-kv-store]                   | CRUD operations against a key-value backend                 | https://github.com/WebAssembly/wasi-kv-store       |
 | [Machine Learning (wasi-nn)][wasi-nn]              | Inference against pre-trained ML models                     | https://github.com/WebAssembly/wasi-nn             |
 | [Runtime Config][wasi-runtime-config]              | Read-only access to host-provided configuration values      | https://github.com/WebAssembly/wasi-runtime-config |
-| [GFX][wasi-gfx]                                    | Cross-platform graphics primitives for surfaces and frames  | https://github.com/WebAssembly/wasi-gfx            |
+| [WebGPU][wasi-webgpu]                              | Cross-platform graphics primitives for surfaces and frames  | https://github.com/WebAssembly/wasi-webgpu        |
 | [Messaging][wasi-messaging]                        | Publish/subscribe and request/reply messaging primitives    | https://github.com/WebAssembly/wasi-messaging      |
 
 ### Phase 1 - Feature Proposal (CG)
@@ -119,7 +117,6 @@ Proposals remain in the 0.x semver range until they reach Phase 5 and are fully 
 [wasi-gpio]: https://github.com/WebAssembly/wasi-gpio
 [wasi-http]: https://github.com/WebAssembly/WASI/tree/main/proposals/http
 [wasi-i2c]: https://github.com/WebAssembly/wasi-i2c
-[wasi-io]: https://github.com/WebAssembly/WASI/tree/main/proposals/io
 [wasi-kv-store]: https://github.com/WebAssembly/wasi-kv-store
 [wasi-logging]: https://github.com/WebAssembly/wasi-logging
 [wasi-messaging]: https://github.com/WebAssembly/wasi-messaging
@@ -139,5 +136,5 @@ Proposals remain in the 0.x semver range until they reach Phase 5 and are fully 
 [wasi-tls]: https://github.com/WebAssembly/wasi-tls
 [wasi-url]: https://github.com/WebAssembly/wasi-url
 [wasi-usb]: https://github.com/WebAssembly/wasi-usb
-[wasi-gfx]: https://github.com/WebAssembly/wasi-gfx
+[wasi-webgpu]: https://github.com/WebAssembly/wasi-webgpu
 [wasi-cli]: https://github.com/WebAssembly/WASI/tree/main/proposals/cli

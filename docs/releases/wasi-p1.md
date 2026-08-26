@@ -40,7 +40,7 @@ Compared to WASI 0.2 and later releases, WASI 0.1 has several limitations:
 
 ## Runtime support
 
-WASI 0.1 has the broadest runtime support of any WASI version: [Wasmtime](https://wasmtime.dev/), [Wasmer](https://wasmer.io/), [WasmEdge](https://wasmedge.org/), [WAMR](https://bytecodealliance.github.io/wamr.dev/), [wazero](https://wazero.io/), [wasmi](https://github.com/wasmi-labs/wasmi), [wasm3](https://github.com/wasm3/wasm3), Node.js (via the [WASI module](https://nodejs.org/api/wasi.html)), and Deno all provide WASI 0.1 support.
+WASI 0.1 has the broadest runtime support of any WASI version: [Wasmtime](https://wasmtime.dev/), [Wasmer](https://wasmer.io/), [WasmEdge](https://wasmedge.org/), [WAMR](https://wamr.dev/), [wazero](https://wazero.io/), [wasmi](https://github.com/wasmi-labs/wasmi), [wasm3](https://github.com/wasm3/wasm3), Node.js (via the [WASI module](https://nodejs.org/api/wasi.html)), and Deno all provide WASI 0.1 support.
 
 ## Further reading
 

@@ -12,7 +12,7 @@ To date, WASI has seen three milestone releases: **0.1**, **0.2**, and **0.3**. 
 
 ## Who are we?
 
-WASI is an open standard under active development by the [**WASI Subgroup**](https://github.com/WebAssembly/WASI/blob/main/Charter.md) in the **W3C WebAssembly Community Group**. Discussions happen in [GitHub issues](https://github.com/WebAssembly/WASI/issues), [pull requests](https://github.com/WebAssembly/WASI/pulls), and [bi-weekly Zoom meetings](https://github.com/WebAssembly/meetings/tree/main/wasi).
+WASI is an open standard under active development by the [**WASI Subgroup**](https://github.com/WebAssembly/WASI/blob/main/docs/Charter.md) in the **W3C WebAssembly Community Group**. Discussions happen in [GitHub issues](https://github.com/WebAssembly/WASI/issues), [pull requests](https://github.com/WebAssembly/WASI/pulls), and [bi-weekly Zoom meetings](https://github.com/WebAssembly/meetings/tree/main/wasi).
 
 ## Who are you?
 
@@ -20,7 +20,7 @@ WASI and Wasm are tools for any type of software developer: whether you're writi
 
 ## How to get started
 
-There are many different runtimes that support WASI including [Wasmtime](https://wasmtime.dev/), [WAMR](https://bytecodealliance.github.io/wamr.dev/), [WasmEdge](https://wasmedge.org/), [wazero](https://wazero.io/), [Wasmer](https://wasmer.io/), [wasmi](https://github.com/wasmi-labs/wasmi), [wasm3](https://github.com/wasm3/wasm3), [jco](https://github.com/bytecodealliance/jco), [pywasm](https://github.com/mohanson/pywasm) and [zwasm](https://github.com/zwasm/zwasm). Many of these runtimes have different areas of focus (i.e., IoT, embedded devices, and edge for WAMR, server-side and non-web embeddings with components for Wasmtime, and running in JS environments and browsers for Jco). The introductory documentation for each is a great place to start.
+There are many different runtimes that support WASI including [Wasmtime](https://wasmtime.dev/), [WAMR](https://wamr.dev/), [WasmEdge](https://wasmedge.org/), [wazero](https://wazero.io/), [Wasmer](https://wasmer.io/), [wasmi](https://github.com/wasmi-labs/wasmi), [wasm3](https://github.com/wasm3/wasm3), [jco](https://github.com/bytecodealliance/jco), [pywasm](https://github.com/mohanson/pywasm) and [zwasm](https://github.com/zwasm/zwasm). Many of these runtimes have different areas of focus (i.e., IoT, embedded devices, and edge for WAMR, server-side and non-web embeddings with components for Wasmtime, and running in JS environments and browsers for Jco). The introductory documentation for each is a great place to start.
 
 WASI can be implemented by both core Wasm modules and applications built according to the **Component Model**, a specification for Wasm applications that are interoperable and composable. You can learn more about components in the Bytecode Alliance's **[WebAssembly Component Model](https://component-model.bytecodealliance.org/)** documentation.
 
